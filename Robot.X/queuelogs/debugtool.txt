@@ -1,0 +1,1000 @@
+5374 1714555842239 XXXX 1714555842239, Thread 5374: XXXX 1714555842239, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555842337 XXXX 1714555842337, Thread 5374: XXXX 1714555842337, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555842338 XXXX 1714555842338, Thread 5374: XXXX 1714555842338, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555842437 XXXX 1714555842437, Thread 5374: XXXX 1714555842437, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555842439 XXXX 1714555842439, Thread 5374: XXXX 1714555842439, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555842539 XXXX 1714555842539, Thread 5374: XXXX 1714555842539, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555842540 XXXX 1714555842540, Thread 5374: XXXX 1714555842540, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555842654 XXXX 1714555842654, Thread 5374: XXXX 1714555842654, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555842655 XXXX 1714555842655, Thread 5374: XXXX 1714555842655, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555842755 XXXX 1714555842755, Thread 5374: XXXX 1714555842755, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555842757 XXXX 1714555842757, Thread 5374: XXXX 1714555842757, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555842856 XXXX 1714555842856, Thread 5374: XXXX 1714555842856, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555842857 XXXX 1714555842857, Thread 5374: XXXX 1714555842857, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555842970 XXXX 1714555842970, Thread 5374: XXXX 1714555842970, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555842972 XXXX 1714555842972, Thread 5374: XXXX 1714555842972, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843070 XXXX 1714555843070, Thread 5374: XXXX 1714555843070, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843072 XXXX 1714555843072, Thread 5374: XXXX 1714555843072, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843171 XXXX 1714555843171, Thread 5374: XXXX 1714555843171, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843172 XXXX 1714555843172, Thread 5374: XXXX 1714555843172, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843273 XXXX 1714555843273, Thread 5374: XXXX 1714555843273, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843275 XXXX 1714555843275, Thread 5374: XXXX 1714555843275, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843387 XXXX 1714555843387, Thread 5374: XXXX 1714555843387, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843388 XXXX 1714555843388, Thread 5374: XXXX 1714555843388, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843487 XXXX 1714555843487, Thread 5374: XXXX 1714555843487, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843488 XXXX 1714555843488, Thread 5374: XXXX 1714555843488, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843589 XXXX 1714555843589, Thread 5374: XXXX 1714555843589, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843590 XXXX 1714555843590, Thread 5374: XXXX 1714555843590, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843706 XXXX 1714555843705, Thread 5374: XXXX 1714555843705, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843706 XXXX 1714555843706, Thread 5374: XXXX 1714555843706, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843806 XXXX 1714555843806, Thread 5374: XXXX 1714555843806, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843806 XXXX 1714555843806, Thread 5374: XXXX 1714555843806, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555843906 XXXX 1714555843906, Thread 5374: XXXX 1714555843906, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555843907 XXXX 1714555843907, Thread 5374: XXXX 1714555843907, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844022 XXXX 1714555844022, Thread 5374: XXXX 1714555844022, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844023 XXXX 1714555844023, Thread 5374: XXXX 1714555844023, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844124 XXXX 1714555844124, Thread 5374: XXXX 1714555844124, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844124 XXXX 1714555844124, Thread 5374: XXXX 1714555844124, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844239 XXXX 1714555844239, Thread 5374: XXXX 1714555844239, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844239 XXXX 1714555844239, Thread 5374: XXXX 1714555844239, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844356 XXXX 1714555844356, Thread 5374: XXXX 1714555844356, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844356 XXXX 1714555844356, Thread 5374: XXXX 1714555844356, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844456 XXXX 1714555844456, Thread 5374: XXXX 1714555844456, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844456 XXXX 1714555844456, Thread 5374: XXXX 1714555844456, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844557 XXXX 1714555844557, Thread 5374: XXXX 1714555844557, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844559 XXXX 1714555844559, Thread 5374: XXXX 1714555844559, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844657 XXXX 1714555844657, Thread 5374: XXXX 1714555844657, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844658 XXXX 1714555844658, Thread 5374: XXXX 1714555844658, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844772 XXXX 1714555844772, Thread 5374: XXXX 1714555844772, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844773 XXXX 1714555844773, Thread 5374: XXXX 1714555844773, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844873 XXXX 1714555844873, Thread 5374: XXXX 1714555844873, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844875 XXXX 1714555844875, Thread 5374: XXXX 1714555844875, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555844988 XXXX 1714555844988, Thread 5374: XXXX 1714555844988, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555844989 XXXX 1714555844989, Thread 5374: XXXX 1714555844989, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845089 XXXX 1714555845089, Thread 5374: XXXX 1714555845089, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845090 XXXX 1714555845090, Thread 5374: XXXX 1714555845090, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845205 XXXX 1714555845205, Thread 5374: XXXX 1714555845205, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845207 XXXX 1714555845207, Thread 5374: XXXX 1714555845207, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845305 XXXX 1714555845305, Thread 5374: XXXX 1714555845305, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845306 XXXX 1714555845306, Thread 5374: XXXX 1714555845306, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845406 XXXX 1714555845406, Thread 5374: XXXX 1714555845406, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845407 XXXX 1714555845407, Thread 5374: XXXX 1714555845407, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845506 XXXX 1714555845506, Thread 5374: XXXX 1714555845506, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845507 XXXX 1714555845507, Thread 5374: XXXX 1714555845507, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845620 XXXX 1714555845620, Thread 5374: XXXX 1714555845620, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845622 XXXX 1714555845622, Thread 5374: XXXX 1714555845622, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845722 XXXX 1714555845722, Thread 5374: XXXX 1714555845722, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845723 XXXX 1714555845723, Thread 5374: XXXX 1714555845723, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845822 XXXX 1714555845822, Thread 5374: XXXX 1714555845822, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845823 XXXX 1714555845823, Thread 5374: XXXX 1714555845823, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555845939 XXXX 1714555845939, Thread 5374: XXXX 1714555845939, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555845939 XXXX 1714555845939, Thread 5374: XXXX 1714555845939, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846055 XXXX 1714555846055, Thread 5374: XXXX 1714555846055, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846056 XXXX 1714555846056, Thread 5374: XXXX 1714555846056, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846156 XXXX 1714555846156, Thread 5374: XXXX 1714555846156, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846157 XXXX 1714555846157, Thread 5374: XXXX 1714555846157, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846272 XXXX 1714555846272, Thread 5374: XXXX 1714555846272, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846273 XXXX 1714555846273, Thread 5374: XXXX 1714555846273, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846372 XXXX 1714555846372, Thread 5374: XXXX 1714555846372, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846373 XXXX 1714555846373, Thread 5374: XXXX 1714555846373, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846473 XXXX 1714555846473, Thread 5374: XXXX 1714555846473, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846475 XXXX 1714555846475, Thread 5374: XXXX 1714555846475, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846587 XXXX 1714555846587, Thread 5374: XXXX 1714555846587, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846589 XXXX 1714555846589, Thread 5374: XXXX 1714555846589, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846689 XXXX 1714555846689, Thread 5374: XXXX 1714555846689, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846690 XXXX 1714555846690, Thread 5374: XXXX 1714555846690, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846806 XXXX 1714555846806, Thread 5374: XXXX 1714555846806, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846807 XXXX 1714555846807, Thread 5374: XXXX 1714555846807, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555846919 XXXX 1714555846919, Thread 5374: XXXX 1714555846919, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555846920 XXXX 1714555846920, Thread 5374: XXXX 1714555846920, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847023 XXXX 1714555847023, Thread 5374: XXXX 1714555847023, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847024 XXXX 1714555847024, Thread 5374: XXXX 1714555847024, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847139 XXXX 1714555847139, Thread 5374: XXXX 1714555847139, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847140 XXXX 1714555847140, Thread 5374: XXXX 1714555847140, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847255 XXXX 1714555847255, Thread 5374: XXXX 1714555847255, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847256 XXXX 1714555847256, Thread 5374: XXXX 1714555847256, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847356 XXXX 1714555847356, Thread 5374: XXXX 1714555847356, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847357 XXXX 1714555847357, Thread 5374: XXXX 1714555847357, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847469 XXXX 1714555847469, Thread 5374: XXXX 1714555847469, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847470 XXXX 1714555847470, Thread 5374: XXXX 1714555847470, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847570 XXXX 1714555847570, Thread 5374: XXXX 1714555847570, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847572 XXXX 1714555847572, Thread 5374: XXXX 1714555847572, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847672 XXXX 1714555847672, Thread 5374: XXXX 1714555847672, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847672 XXXX 1714555847672, Thread 5374: XXXX 1714555847672, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847787 XXXX 1714555847787, Thread 5374: XXXX 1714555847787, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847789 XXXX 1714555847789, Thread 5374: XXXX 1714555847789, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555847889 XXXX 1714555847889, Thread 5374: XXXX 1714555847889, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555847890 XXXX 1714555847890, Thread 5374: XXXX 1714555847890, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848005 XXXX 1714555848005, Thread 5374: XXXX 1714555848005, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848006 XXXX 1714555848006, Thread 5374: XXXX 1714555848006, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848122 XXXX 1714555848122, Thread 5374: XXXX 1714555848122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848124 XXXX 1714555848124, Thread 5374: XXXX 1714555848124, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848222 XXXX 1714555848222, Thread 5374: XXXX 1714555848222, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848223 XXXX 1714555848223, Thread 5374: XXXX 1714555848223, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848339 XXXX 1714555848339, Thread 5374: XXXX 1714555848339, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848340 XXXX 1714555848340, Thread 5374: XXXX 1714555848340, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848454 XXXX 1714555848454, Thread 5374: XXXX 1714555848454, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848455 XXXX 1714555848455, Thread 5374: XXXX 1714555848455, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848556 XXXX 1714555848556, Thread 5374: XXXX 1714555848556, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848557 XXXX 1714555848557, Thread 5374: XXXX 1714555848557, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848670 XXXX 1714555848670, Thread 5374: XXXX 1714555848670, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848672 XXXX 1714555848672, Thread 5374: XXXX 1714555848672, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848772 XXXX 1714555848772, Thread 5374: XXXX 1714555848772, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848773 XXXX 1714555848773, Thread 5374: XXXX 1714555848773, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848872 XXXX 1714555848872, Thread 5374: XXXX 1714555848872, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848875 XXXX 1714555848875, Thread 5374: XXXX 1714555848875, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555848973 XXXX 1714555848973, Thread 5374: XXXX 1714555848973, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555848975 XXXX 1714555848975, Thread 5374: XXXX 1714555848975, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849073 XXXX 1714555849073, Thread 5374: XXXX 1714555849073, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849074 XXXX 1714555849074, Thread 5374: XXXX 1714555849074, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849187 XXXX 1714555849187, Thread 5374: XXXX 1714555849187, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849189 XXXX 1714555849189, Thread 5374: XXXX 1714555849189, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849289 XXXX 1714555849289, Thread 5374: XXXX 1714555849289, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849290 XXXX 1714555849290, Thread 5374: XXXX 1714555849290, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849389 XXXX 1714555849389, Thread 5374: XXXX 1714555849389, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849392 XXXX 1714555849392, Thread 5374: XXXX 1714555849392, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849490 XXXX 1714555849490, Thread 5374: XXXX 1714555849490, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849491 XXXX 1714555849491, Thread 5374: XXXX 1714555849491, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849590 XXXX 1714555849590, Thread 5374: XXXX 1714555849590, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849591 XXXX 1714555849591, Thread 5374: XXXX 1714555849591, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849705 XXXX 1714555849705, Thread 5374: XXXX 1714555849705, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849706 XXXX 1714555849706, Thread 5374: XXXX 1714555849706, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849806 XXXX 1714555849806, Thread 5374: XXXX 1714555849806, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849807 XXXX 1714555849807, Thread 5374: XXXX 1714555849807, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555849922 XXXX 1714555849922, Thread 5374: XXXX 1714555849922, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555849923 XXXX 1714555849923, Thread 5374: XXXX 1714555849923, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850023 XXXX 1714555850023, Thread 5374: XXXX 1714555850023, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850024 XXXX 1714555850024, Thread 5374: XXXX 1714555850024, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850139 XXXX 1714555850139, Thread 5374: XXXX 1714555850139, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850140 XXXX 1714555850140, Thread 5374: XXXX 1714555850140, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850253 XXXX 1714555850253, Thread 5374: XXXX 1714555850253, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850256 XXXX 1714555850256, Thread 5374: XXXX 1714555850256, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850355 XXXX 1714555850355, Thread 5374: XXXX 1714555850355, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850355 XXXX 1714555850355, Thread 5374: XXXX 1714555850355, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850456 XXXX 1714555850456, Thread 5374: XXXX 1714555850456, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850457 XXXX 1714555850457, Thread 5374: XXXX 1714555850457, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850570 XXXX 1714555850570, Thread 5374: XXXX 1714555850570, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850572 XXXX 1714555850572, Thread 5374: XXXX 1714555850572, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850672 XXXX 1714555850672, Thread 5374: XXXX 1714555850672, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850675 XXXX 1714555850675, Thread 5374: XXXX 1714555850675, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850789 XXXX 1714555850789, Thread 5374: XXXX 1714555850789, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850790 XXXX 1714555850790, Thread 5374: XXXX 1714555850790, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555850904 XXXX 1714555850904, Thread 5374: XXXX 1714555850904, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555850907 XXXX 1714555850907, Thread 5374: XXXX 1714555850907, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851006 XXXX 1714555851006, Thread 5374: XXXX 1714555851006, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851006 XXXX 1714555851006, Thread 5374: XXXX 1714555851006, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851106 XXXX 1714555851106, Thread 5374: XXXX 1714555851106, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851107 XXXX 1714555851107, Thread 5374: XXXX 1714555851107, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851222 XXXX 1714555851222, Thread 5374: XXXX 1714555851222, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851223 XXXX 1714555851223, Thread 5374: XXXX 1714555851223, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851338 XXXX 1714555851338, Thread 5374: XXXX 1714555851338, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851339 XXXX 1714555851339, Thread 5374: XXXX 1714555851339, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851439 XXXX 1714555851439, Thread 5374: XXXX 1714555851439, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851440 XXXX 1714555851440, Thread 5374: XXXX 1714555851440, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851553 XXXX 1714555851553, Thread 5374: XXXX 1714555851553, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851554 XXXX 1714555851554, Thread 5374: XXXX 1714555851554, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851656 XXXX 1714555851656, Thread 5374: XXXX 1714555851656, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851656 XXXX 1714555851656, Thread 5374: XXXX 1714555851656, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851772 XXXX 1714555851772, Thread 5374: XXXX 1714555851772, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851774 XXXX 1714555851774, Thread 5374: XXXX 1714555851774, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851888 XXXX 1714555851888, Thread 5374: XXXX 1714555851888, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851890 XXXX 1714555851890, Thread 5374: XXXX 1714555851890, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555851989 XXXX 1714555851989, Thread 5374: XXXX 1714555851989, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555851990 XXXX 1714555851990, Thread 5374: XXXX 1714555851990, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852105 XXXX 1714555852105, Thread 5374: XXXX 1714555852105, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852107 XXXX 1714555852107, Thread 5374: XXXX 1714555852106, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852205 XXXX 1714555852205, Thread 5374: XXXX 1714555852205, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852206 XXXX 1714555852206, Thread 5374: XXXX 1714555852206, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852320 XXXX 1714555852320, Thread 5374: XXXX 1714555852320, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852322 XXXX 1714555852322, Thread 5374: XXXX 1714555852322, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852422 XXXX 1714555852422, Thread 5374: XXXX 1714555852422, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852422 XXXX 1714555852422, Thread 5374: XXXX 1714555852422, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852536 XXXX 1714555852536, Thread 5374: XXXX 1714555852536, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852537 XXXX 1714555852537, Thread 5374: XXXX 1714555852537, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852639 XXXX 1714555852639, Thread 5374: XXXX 1714555852639, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852639 XXXX 1714555852639, Thread 5374: XXXX 1714555852639, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852739 XXXX 1714555852739, Thread 5374: XXXX 1714555852739, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852740 XXXX 1714555852740, Thread 5374: XXXX 1714555852740, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852853 XXXX 1714555852853, Thread 5374: XXXX 1714555852853, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852855 XXXX 1714555852855, Thread 5374: XXXX 1714555852855, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555852953 XXXX 1714555852953, Thread 5374: XXXX 1714555852953, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555852955 XXXX 1714555852955, Thread 5374: XXXX 1714555852955, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853055 XXXX 1714555853055, Thread 5374: XXXX 1714555853055, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853056 XXXX 1714555853056, Thread 5374: XXXX 1714555853056, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853155 XXXX 1714555853154, Thread 5374: XXXX 1714555853154, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853156 XXXX 1714555853156, Thread 5374: XXXX 1714555853156, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853255 XXXX 1714555853255, Thread 5374: XXXX 1714555853255, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853256 XXXX 1714555853256, Thread 5374: XXXX 1714555853256, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853370 XXXX 1714555853370, Thread 5374: XXXX 1714555853370, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853372 XXXX 1714555853372, Thread 5374: XXXX 1714555853372, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853472 XXXX 1714555853472, Thread 5374: XXXX 1714555853472, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853473 XXXX 1714555853473, Thread 5374: XXXX 1714555853473, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853588 XXXX 1714555853588, Thread 5374: XXXX 1714555853588, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853590 XXXX 1714555853590, Thread 5374: XXXX 1714555853590, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853689 XXXX 1714555853689, Thread 5374: XXXX 1714555853689, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853690 XXXX 1714555853690, Thread 5374: XXXX 1714555853690, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853805 XXXX 1714555853805, Thread 5374: XXXX 1714555853805, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853806 XXXX 1714555853806, Thread 5374: XXXX 1714555853806, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555853906 XXXX 1714555853906, Thread 5374: XXXX 1714555853906, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555853907 XXXX 1714555853907, Thread 5374: XXXX 1714555853907, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854006 XXXX 1714555854006, Thread 5374: XXXX 1714555854006, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854007 XXXX 1714555854007, Thread 5374: XXXX 1714555854007, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854122 XXXX 1714555854122, Thread 5374: XXXX 1714555854122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854122 XXXX 1714555854122, Thread 5374: XXXX 1714555854122, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854237 XXXX 1714555854237, Thread 5374: XXXX 1714555854237, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854240 XXXX 1714555854240, Thread 5374: XXXX 1714555854240, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854339 XXXX 1714555854339, Thread 5374: XXXX 1714555854339, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854340 XXXX 1714555854340, Thread 5374: XXXX 1714555854340, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854453 XXXX 1714555854453, Thread 5374: XXXX 1714555854453, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854456 XXXX 1714555854456, Thread 5374: XXXX 1714555854456, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854553 XXXX 1714555854553, Thread 5374: XXXX 1714555854553, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854555 XXXX 1714555854555, Thread 5374: XXXX 1714555854555, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854656 XXXX 1714555854656, Thread 5374: XXXX 1714555854656, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854657 XXXX 1714555854657, Thread 5374: XXXX 1714555854657, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854772 XXXX 1714555854772, Thread 5374: XXXX 1714555854772, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854772 XXXX 1714555854772, Thread 5374: XXXX 1714555854772, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854886 XXXX 1714555854886, Thread 5374: XXXX 1714555854886, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854888 XXXX 1714555854888, Thread 5374: XXXX 1714555854888, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555854989 XXXX 1714555854989, Thread 5374: XXXX 1714555854989, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555854990 XXXX 1714555854990, Thread 5374: XXXX 1714555854990, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855090 XXXX 1714555855090, Thread 5374: XXXX 1714555855090, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855091 XXXX 1714555855091, Thread 5374: XXXX 1714555855091, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855205 XXXX 1714555855205, Thread 5374: XXXX 1714555855205, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855207 XXXX 1714555855207, Thread 5374: XXXX 1714555855207, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855306 XXXX 1714555855306, Thread 5374: XXXX 1714555855306, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855306 XXXX 1714555855306, Thread 5374: XXXX 1714555855306, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855421 XXXX 1714555855421, Thread 5374: XXXX 1714555855421, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855423 XXXX 1714555855423, Thread 5374: XXXX 1714555855423, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855523 XXXX 1714555855523, Thread 5374: XXXX 1714555855523, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855524 XXXX 1714555855524, Thread 5374: XXXX 1714555855524, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855623 XXXX 1714555855623, Thread 5374: XXXX 1714555855623, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855624 XXXX 1714555855624, Thread 5374: XXXX 1714555855624, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855739 XXXX 1714555855739, Thread 5374: XXXX 1714555855739, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855739 XXXX 1714555855739, Thread 5374: XXXX 1714555855739, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855840 XXXX 1714555855840, Thread 5374: XXXX 1714555855840, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855842 XXXX 1714555855842, Thread 5374: XXXX 1714555855842, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555855955 XXXX 1714555855955, Thread 5374: XXXX 1714555855955, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555855956 XXXX 1714555855956, Thread 5374: XXXX 1714555855956, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856056 XXXX 1714555856056, Thread 5374: XXXX 1714555856056, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856057 XXXX 1714555856057, Thread 5374: XXXX 1714555856057, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856156 XXXX 1714555856156, Thread 5374: XXXX 1714555856156, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856157 XXXX 1714555856157, Thread 5374: XXXX 1714555856157, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856256 XXXX 1714555856256, Thread 5374: XXXX 1714555856256, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856257 XXXX 1714555856257, Thread 5374: XXXX 1714555856257, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856356 XXXX 1714555856356, Thread 5374: XXXX 1714555856356, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856356 XXXX 1714555856356, Thread 5374: XXXX 1714555856356, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856472 XXXX 1714555856472, Thread 5374: XXXX 1714555856472, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856473 XXXX 1714555856473, Thread 5374: XXXX 1714555856473, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856589 XXXX 1714555856589, Thread 5374: XXXX 1714555856589, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856590 XXXX 1714555856590, Thread 5374: XXXX 1714555856590, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856704 XXXX 1714555856704, Thread 5374: XXXX 1714555856704, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856705 XXXX 1714555856705, Thread 5374: XXXX 1714555856705, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856807 XXXX 1714555856807, Thread 5374: XXXX 1714555856807, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856808 XXXX 1714555856808, Thread 5374: XXXX 1714555856808, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555856922 XXXX 1714555856922, Thread 5374: XXXX 1714555856922, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555856923 XXXX 1714555856923, Thread 5374: XXXX 1714555856923, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857038 XXXX 1714555857038, Thread 5374: XXXX 1714555857038, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857039 XXXX 1714555857039, Thread 5374: XXXX 1714555857039, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857138 XXXX 1714555857138, Thread 5374: XXXX 1714555857138, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857139 XXXX 1714555857139, Thread 5374: XXXX 1714555857139, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857240 XXXX 1714555857240, Thread 5374: XXXX 1714555857240, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857242 XXXX 1714555857242, Thread 5374: XXXX 1714555857242, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857353 XXXX 1714555857353, Thread 5374: XXXX 1714555857353, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857355 XXXX 1714555857355, Thread 5374: XXXX 1714555857355, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857454 XXXX 1714555857454, Thread 5374: XXXX 1714555857454, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857456 XXXX 1714555857456, Thread 5374: XXXX 1714555857456, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857556 XXXX 1714555857556, Thread 5374: XXXX 1714555857556, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857558 XXXX 1714555857558, Thread 5374: XXXX 1714555857558, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857656 XXXX 1714555857656, Thread 5374: XXXX 1714555857656, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857657 XXXX 1714555857657, Thread 5374: XXXX 1714555857657, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857771 XXXX 1714555857771, Thread 5374: XXXX 1714555857771, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857772 XXXX 1714555857772, Thread 5374: XXXX 1714555857772, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857885 XXXX 1714555857885, Thread 5374: XXXX 1714555857885, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857886 XXXX 1714555857886, Thread 5374: XXXX 1714555857886, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555857986 XXXX 1714555857986, Thread 5374: XXXX 1714555857986, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555857987 XXXX 1714555857987, Thread 5374: XXXX 1714555857987, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858089 XXXX 1714555858089, Thread 5374: XXXX 1714555858089, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858090 XXXX 1714555858090, Thread 5374: XXXX 1714555858090, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858205 XXXX 1714555858205, Thread 5374: XXXX 1714555858205, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858207 XXXX 1714555858207, Thread 5374: XXXX 1714555858207, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858306 XXXX 1714555858306, Thread 5374: XXXX 1714555858306, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858307 XXXX 1714555858307, Thread 5374: XXXX 1714555858307, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858420 XXXX 1714555858420, Thread 5374: XXXX 1714555858420, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858422 XXXX 1714555858422, Thread 5374: XXXX 1714555858422, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858522 XXXX 1714555858522, Thread 5374: XXXX 1714555858522, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858524 XXXX 1714555858524, Thread 5374: XXXX 1714555858524, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858638 XXXX 1714555858638, Thread 5374: XXXX 1714555858638, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858639 XXXX 1714555858639, Thread 5374: XXXX 1714555858639, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858754 XXXX 1714555858754, Thread 5374: XXXX 1714555858754, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858755 XXXX 1714555858755, Thread 5374: XXXX 1714555858755, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858856 XXXX 1714555858856, Thread 5374: XXXX 1714555858856, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858858 XXXX 1714555858858, Thread 5374: XXXX 1714555858858, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555858970 XXXX 1714555858970, Thread 5374: XXXX 1714555858970, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555858971 XXXX 1714555858971, Thread 5374: XXXX 1714555858971, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859086 XXXX 1714555859086, Thread 5374: XXXX 1714555859086, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859087 XXXX 1714555859087, Thread 5374: XXXX 1714555859087, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859189 XXXX 1714555859189, Thread 5374: XXXX 1714555859189, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859190 XXXX 1714555859190, Thread 5374: XXXX 1714555859190, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859303 XXXX 1714555859303, Thread 5374: XXXX 1714555859303, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859305 XXXX 1714555859305, Thread 5374: XXXX 1714555859305, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859405 XXXX 1714555859405, Thread 5374: XXXX 1714555859405, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859406 XXXX 1714555859406, Thread 5374: XXXX 1714555859406, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859522 XXXX 1714555859522, Thread 5374: XXXX 1714555859522, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859523 XXXX 1714555859523, Thread 5374: XXXX 1714555859523, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859622 XXXX 1714555859622, Thread 5374: XXXX 1714555859622, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859623 XXXX 1714555859623, Thread 5374: XXXX 1714555859623, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859737 XXXX 1714555859737, Thread 5374: XXXX 1714555859737, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859738 XXXX 1714555859738, Thread 5374: XXXX 1714555859738, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859838 XXXX 1714555859838, Thread 5374: XXXX 1714555859838, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859839 XXXX 1714555859839, Thread 5374: XXXX 1714555859839, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555859939 XXXX 1714555859939, Thread 5374: XXXX 1714555859939, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555859940 XXXX 1714555859940, Thread 5374: XXXX 1714555859940, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860053 XXXX 1714555860053, Thread 5374: XXXX 1714555860053, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860055 XXXX 1714555860055, Thread 5374: XXXX 1714555860055, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860155 XXXX 1714555860155, Thread 5374: XXXX 1714555860155, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860155 XXXX 1714555860155, Thread 5374: XXXX 1714555860155, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860256 XXXX 1714555860256, Thread 5374: XXXX 1714555860256, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860258 XXXX 1714555860258, Thread 5374: XXXX 1714555860258, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860369 XXXX 1714555860369, Thread 5374: XXXX 1714555860369, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860370 XXXX 1714555860370, Thread 5374: XXXX 1714555860370, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860472 XXXX 1714555860472, Thread 5374: XXXX 1714555860472, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860473 XXXX 1714555860473, Thread 5374: XXXX 1714555860473, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860586 XXXX 1714555860586, Thread 5374: XXXX 1714555860586, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860589 XXXX 1714555860589, Thread 5374: XXXX 1714555860588, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860687 XXXX 1714555860687, Thread 5374: XXXX 1714555860687, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860688 XXXX 1714555860688, Thread 5374: XXXX 1714555860688, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860789 XXXX 1714555860789, Thread 5374: XXXX 1714555860789, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860790 XXXX 1714555860790, Thread 5374: XXXX 1714555860790, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555860905 XXXX 1714555860905, Thread 5374: XXXX 1714555860905, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555860907 XXXX 1714555860907, Thread 5374: XXXX 1714555860907, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861006 XXXX 1714555861006, Thread 5374: XXXX 1714555861006, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861007 XXXX 1714555861007, Thread 5374: XXXX 1714555861007, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861122 XXXX 1714555861122, Thread 5374: XXXX 1714555861122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861122 XXXX 1714555861122, Thread 5374: XXXX 1714555861122, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861238 XXXX 1714555861238, Thread 5374: XXXX 1714555861238, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861239 XXXX 1714555861239, Thread 5374: XXXX 1714555861239, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861339 XXXX 1714555861339, Thread 5374: XXXX 1714555861339, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861340 XXXX 1714555861340, Thread 5374: XXXX 1714555861340, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861453 XXXX 1714555861453, Thread 5374: XXXX 1714555861453, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861455 XXXX 1714555861455, Thread 5374: XXXX 1714555861455, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861555 XXXX 1714555861555, Thread 5374: XXXX 1714555861555, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861557 XXXX 1714555861557, Thread 5374: XXXX 1714555861557, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861656 XXXX 1714555861656, Thread 5374: XXXX 1714555861656, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861657 XXXX 1714555861657, Thread 5374: XXXX 1714555861657, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861756 XXXX 1714555861756, Thread 5374: XXXX 1714555861756, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861756 XXXX 1714555861756, Thread 5374: XXXX 1714555861756, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861872 XXXX 1714555861872, Thread 5374: XXXX 1714555861872, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861872 XXXX 1714555861872, Thread 5374: XXXX 1714555861872, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555861972 XXXX 1714555861972, Thread 5374: XXXX 1714555861972, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555861973 XXXX 1714555861973, Thread 5374: XXXX 1714555861973, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862089 XXXX 1714555862089, Thread 5374: XXXX 1714555862089, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862090 XXXX 1714555862090, Thread 5374: XXXX 1714555862090, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862189 XXXX 1714555862189, Thread 5374: XXXX 1714555862189, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862189 XXXX 1714555862189, Thread 5374: XXXX 1714555862189, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862304 XXXX 1714555862304, Thread 5374: XXXX 1714555862304, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862305 XXXX 1714555862305, Thread 5374: XXXX 1714555862305, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862405 XXXX 1714555862405, Thread 5374: XXXX 1714555862405, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862406 XXXX 1714555862406, Thread 5374: XXXX 1714555862406, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862520 XXXX 1714555862520, Thread 5374: XXXX 1714555862520, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862522 XXXX 1714555862522, Thread 5374: XXXX 1714555862522, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862622 XXXX 1714555862622, Thread 5374: XXXX 1714555862622, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862622 XXXX 1714555862622, Thread 5374: XXXX 1714555862622, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862738 XXXX 1714555862738, Thread 5374: XXXX 1714555862738, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862739 XXXX 1714555862739, Thread 5374: XXXX 1714555862739, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862839 XXXX 1714555862839, Thread 5374: XXXX 1714555862839, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862839 XXXX 1714555862839, Thread 5374: XXXX 1714555862839, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555862954 XXXX 1714555862954, Thread 5374: XXXX 1714555862954, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555862955 XXXX 1714555862955, Thread 5374: XXXX 1714555862955, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863069 XXXX 1714555863069, Thread 5374: XXXX 1714555863069, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863070 XXXX 1714555863070, Thread 5374: XXXX 1714555863070, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863172 XXXX 1714555863172, Thread 5374: XXXX 1714555863172, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863172 XXXX 1714555863172, Thread 5374: XXXX 1714555863172, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863272 XXXX 1714555863272, Thread 5374: XXXX 1714555863272, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863275 XXXX 1714555863275, Thread 5374: XXXX 1714555863275, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863372 XXXX 1714555863372, Thread 5374: XXXX 1714555863372, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863372 XXXX 1714555863372, Thread 5374: XXXX 1714555863372, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863472 XXXX 1714555863472, Thread 5374: XXXX 1714555863472, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863473 XXXX 1714555863473, Thread 5374: XXXX 1714555863473, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863587 XXXX 1714555863587, Thread 5374: XXXX 1714555863587, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863588 XXXX 1714555863588, Thread 5374: XXXX 1714555863588, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863689 XXXX 1714555863689, Thread 5374: XXXX 1714555863689, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863689 XXXX 1714555863689, Thread 5374: XXXX 1714555863689, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863805 XXXX 1714555863805, Thread 5374: XXXX 1714555863805, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863806 XXXX 1714555863806, Thread 5374: XXXX 1714555863806, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555863906 XXXX 1714555863906, Thread 5374: XXXX 1714555863906, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555863907 XXXX 1714555863907, Thread 5374: XXXX 1714555863907, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864021 XXXX 1714555864021, Thread 5374: XXXX 1714555864021, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864022 XXXX 1714555864022, Thread 5374: XXXX 1714555864022, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864122 XXXX 1714555864122, Thread 5374: XXXX 1714555864122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864125 XXXX 1714555864125, Thread 5374: XXXX 1714555864125, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864222 XXXX 1714555864222, Thread 5374: XXXX 1714555864222, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864223 XXXX 1714555864223, Thread 5374: XXXX 1714555864223, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864338 XXXX 1714555864338, Thread 5374: XXXX 1714555864338, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864339 XXXX 1714555864339, Thread 5374: XXXX 1714555864339, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864439 XXXX 1714555864439, Thread 5374: XXXX 1714555864439, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864440 XXXX 1714555864440, Thread 5374: XXXX 1714555864440, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864553 XXXX 1714555864553, Thread 5374: XXXX 1714555864553, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864554 XXXX 1714555864554, Thread 5374: XXXX 1714555864554, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864655 XXXX 1714555864655, Thread 5374: XXXX 1714555864655, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864656 XXXX 1714555864656, Thread 5374: XXXX 1714555864656, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864770 XXXX 1714555864770, Thread 5374: XXXX 1714555864770, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864772 XXXX 1714555864772, Thread 5374: XXXX 1714555864772, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864871 XXXX 1714555864871, Thread 5374: XXXX 1714555864871, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864872 XXXX 1714555864872, Thread 5374: XXXX 1714555864872, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555864973 XXXX 1714555864972, Thread 5374: XXXX 1714555864972, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555864973 XXXX 1714555864973, Thread 5374: XXXX 1714555864973, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865072 XXXX 1714555865072, Thread 5374: XXXX 1714555865072, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865073 XXXX 1714555865073, Thread 5374: XXXX 1714555865073, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865189 XXXX 1714555865189, Thread 5374: XXXX 1714555865189, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865190 XXXX 1714555865190, Thread 5374: XXXX 1714555865190, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865303 XXXX 1714555865303, Thread 5374: XXXX 1714555865303, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865305 XXXX 1714555865305, Thread 5374: XXXX 1714555865305, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865406 XXXX 1714555865406, Thread 5374: XXXX 1714555865406, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865407 XXXX 1714555865407, Thread 5374: XXXX 1714555865407, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865506 XXXX 1714555865506, Thread 5374: XXXX 1714555865506, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865507 XXXX 1714555865507, Thread 5374: XXXX 1714555865507, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865605 XXXX 1714555865605, Thread 5374: XXXX 1714555865605, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865606 XXXX 1714555865606, Thread 5374: XXXX 1714555865606, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865722 XXXX 1714555865722, Thread 5374: XXXX 1714555865722, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865722 XXXX 1714555865722, Thread 5374: XXXX 1714555865722, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865836 XXXX 1714555865836, Thread 5374: XXXX 1714555865836, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865837 XXXX 1714555865837, Thread 5374: XXXX 1714555865837, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555865938 XXXX 1714555865938, Thread 5374: XXXX 1714555865938, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555865939 XXXX 1714555865939, Thread 5374: XXXX 1714555865939, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866038 XXXX 1714555866038, Thread 5374: XXXX 1714555866038, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866040 XXXX 1714555866040, Thread 5374: XXXX 1714555866040, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866138 XXXX 1714555866138, Thread 5374: XXXX 1714555866138, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866139 XXXX 1714555866139, Thread 5374: XXXX 1714555866139, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866239 XXXX 1714555866239, Thread 5374: XXXX 1714555866239, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866240 XXXX 1714555866240, Thread 5374: XXXX 1714555866240, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866355 XXXX 1714555866355, Thread 5374: XXXX 1714555866355, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866357 XXXX 1714555866357, Thread 5374: XXXX 1714555866357, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866456 XXXX 1714555866456, Thread 5374: XXXX 1714555866456, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866458 XXXX 1714555866458, Thread 5374: XXXX 1714555866458, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866572 XXXX 1714555866572, Thread 5374: XXXX 1714555866572, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866572 XXXX 1714555866572, Thread 5374: XXXX 1714555866572, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866689 XXXX 1714555866689, Thread 5374: XXXX 1714555866689, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866690 XXXX 1714555866690, Thread 5374: XXXX 1714555866690, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866805 XXXX 1714555866805, Thread 5374: XXXX 1714555866805, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866807 XXXX 1714555866807, Thread 5374: XXXX 1714555866807, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555866905 XXXX 1714555866905, Thread 5374: XXXX 1714555866905, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555866908 XXXX 1714555866908, Thread 5374: XXXX 1714555866908, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867019 XXXX 1714555867019, Thread 5374: XXXX 1714555867019, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867020 XXXX 1714555867020, Thread 5374: XXXX 1714555867020, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867122 XXXX 1714555867122, Thread 5374: XXXX 1714555867122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867124 XXXX 1714555867124, Thread 5374: XXXX 1714555867124, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867222 XXXX 1714555867222, Thread 5374: XXXX 1714555867222, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867222 XXXX 1714555867222, Thread 5374: XXXX 1714555867222, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867336 XXXX 1714555867336, Thread 5374: XXXX 1714555867336, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867338 XXXX 1714555867338, Thread 5374: XXXX 1714555867338, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867437 XXXX 1714555867437, Thread 5374: XXXX 1714555867437, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867439 XXXX 1714555867439, Thread 5374: XXXX 1714555867439, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867539 XXXX 1714555867539, Thread 5374: XXXX 1714555867539, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867541 XXXX 1714555867541, Thread 5374: XXXX 1714555867541, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867639 XXXX 1714555867639, Thread 5374: XXXX 1714555867639, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867640 XXXX 1714555867640, Thread 5374: XXXX 1714555867640, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867753 XXXX 1714555867753, Thread 5374: XXXX 1714555867753, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867754 XXXX 1714555867754, Thread 5374: XXXX 1714555867754, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867855 XXXX 1714555867855, Thread 5374: XXXX 1714555867855, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867857 XXXX 1714555867857, Thread 5374: XXXX 1714555867857, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555867956 XXXX 1714555867956, Thread 5374: XXXX 1714555867956, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555867958 XXXX 1714555867958, Thread 5374: XXXX 1714555867958, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868072 XXXX 1714555868072, Thread 5374: XXXX 1714555868072, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868072 XXXX 1714555868072, Thread 5374: XXXX 1714555868072, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868189 XXXX 1714555868189, Thread 5374: XXXX 1714555868189, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868190 XXXX 1714555868190, Thread 5374: XXXX 1714555868190, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868289 XXXX 1714555868289, Thread 5374: XXXX 1714555868289, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868290 XXXX 1714555868290, Thread 5374: XXXX 1714555868290, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868403 XXXX 1714555868403, Thread 5374: XXXX 1714555868403, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868405 XXXX 1714555868405, Thread 5374: XXXX 1714555868405, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868504 XXXX 1714555868504, Thread 5374: XXXX 1714555868504, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868506 XXXX 1714555868506, Thread 5374: XXXX 1714555868506, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868606 XXXX 1714555868606, Thread 5374: XXXX 1714555868606, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868607 XXXX 1714555868607, Thread 5374: XXXX 1714555868607, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868722 XXXX 1714555868722, Thread 5374: XXXX 1714555868722, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868723 XXXX 1714555868723, Thread 5374: XXXX 1714555868723, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868838 XXXX 1714555868838, Thread 5374: XXXX 1714555868838, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868839 XXXX 1714555868839, Thread 5374: XXXX 1714555868839, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555868939 XXXX 1714555868939, Thread 5374: XXXX 1714555868939, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555868940 XXXX 1714555868940, Thread 5374: XXXX 1714555868940, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869054 XXXX 1714555869054, Thread 5374: XXXX 1714555869054, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869055 XXXX 1714555869055, Thread 5374: XXXX 1714555869055, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869156 XXXX 1714555869156, Thread 5374: XXXX 1714555869156, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869158 XXXX 1714555869158, Thread 5374: XXXX 1714555869158, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869272 XXXX 1714555869272, Thread 5374: XXXX 1714555869272, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869274 XXXX 1714555869274, Thread 5374: XXXX 1714555869274, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869372 XXXX 1714555869372, Thread 5374: XXXX 1714555869372, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869373 XXXX 1714555869373, Thread 5374: XXXX 1714555869373, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869489 XXXX 1714555869489, Thread 5374: XXXX 1714555869489, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869489 XXXX 1714555869489, Thread 5374: XXXX 1714555869489, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869589 XXXX 1714555869589, Thread 5374: XXXX 1714555869589, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869590 XXXX 1714555869590, Thread 5374: XXXX 1714555869590, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869690 XXXX 1714555869690, Thread 5374: XXXX 1714555869690, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869691 XXXX 1714555869691, Thread 5374: XXXX 1714555869691, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869805 XXXX 1714555869805, Thread 5374: XXXX 1714555869805, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869806 XXXX 1714555869806, Thread 5374: XXXX 1714555869806, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555869906 XXXX 1714555869906, Thread 5374: XXXX 1714555869906, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555869907 XXXX 1714555869907, Thread 5374: XXXX 1714555869907, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870022 XXXX 1714555870022, Thread 5374: XXXX 1714555870022, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870022 XXXX 1714555870022, Thread 5374: XXXX 1714555870022, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870122 XXXX 1714555870122, Thread 5374: XXXX 1714555870122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870124 XXXX 1714555870124, Thread 5374: XXXX 1714555870124, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870238 XXXX 1714555870238, Thread 5374: XXXX 1714555870238, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870240 XXXX 1714555870240, Thread 5374: XXXX 1714555870240, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870339 XXXX 1714555870339, Thread 5374: XXXX 1714555870339, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870339 XXXX 1714555870339, Thread 5374: XXXX 1714555870339, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870439 XXXX 1714555870439, Thread 5374: XXXX 1714555870439, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870440 XXXX 1714555870440, Thread 5374: XXXX 1714555870440, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870555 XXXX 1714555870555, Thread 5374: XXXX 1714555870555, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870556 XXXX 1714555870556, Thread 5374: XXXX 1714555870556, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870656 XXXX 1714555870656, Thread 5374: XXXX 1714555870656, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870658 XXXX 1714555870658, Thread 5374: XXXX 1714555870658, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870756 XXXX 1714555870756, Thread 5374: XXXX 1714555870756, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870758 XXXX 1714555870758, Thread 5374: XXXX 1714555870758, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870872 XXXX 1714555870872, Thread 5374: XXXX 1714555870872, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870872 XXXX 1714555870872, Thread 5374: XXXX 1714555870872, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555870972 XXXX 1714555870972, Thread 5374: XXXX 1714555870972, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555870973 XXXX 1714555870973, Thread 5374: XXXX 1714555870973, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871084 XXXX 1714555871084, Thread 5374: XXXX 1714555871084, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871085 XXXX 1714555871085, Thread 5374: XXXX 1714555871085, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871186 XXXX 1714555871186, Thread 5374: XXXX 1714555871186, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871188 XXXX 1714555871188, Thread 5374: XXXX 1714555871188, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871287 XXXX 1714555871287, Thread 5374: XXXX 1714555871287, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871289 XXXX 1714555871289, Thread 5374: XXXX 1714555871289, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871388 XXXX 1714555871388, Thread 5374: XXXX 1714555871388, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871389 XXXX 1714555871389, Thread 5374: XXXX 1714555871389, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871488 XXXX 1714555871488, Thread 5374: XXXX 1714555871488, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871489 XXXX 1714555871489, Thread 5374: XXXX 1714555871489, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871589 XXXX 1714555871589, Thread 5374: XXXX 1714555871589, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871589 XXXX 1714555871589, Thread 5374: XXXX 1714555871589, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871705 XXXX 1714555871705, Thread 5374: XXXX 1714555871704, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871706 XXXX 1714555871706, Thread 5374: XXXX 1714555871706, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871806 XXXX 1714555871806, Thread 5374: XXXX 1714555871806, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871807 XXXX 1714555871807, Thread 5374: XXXX 1714555871807, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555871920 XXXX 1714555871920, Thread 5374: XXXX 1714555871920, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555871922 XXXX 1714555871922, Thread 5374: XXXX 1714555871922, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872021 XXXX 1714555872021, Thread 5374: XXXX 1714555872021, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872023 XXXX 1714555872023, Thread 5374: XXXX 1714555872023, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872122 XXXX 1714555872122, Thread 5374: XXXX 1714555872122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872123 XXXX 1714555872122, Thread 5374: XXXX 1714555872122, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872237 XXXX 1714555872237, Thread 5374: XXXX 1714555872237, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872238 XXXX 1714555872238, Thread 5374: XXXX 1714555872238, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872339 XXXX 1714555872339, Thread 5374: XXXX 1714555872339, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872339 XXXX 1714555872339, Thread 5374: XXXX 1714555872339, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872455 XXXX 1714555872455, Thread 5374: XXXX 1714555872455, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872455 XXXX 1714555872455, Thread 5374: XXXX 1714555872455, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872570 XXXX 1714555872570, Thread 5374: XXXX 1714555872570, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872572 XXXX 1714555872572, Thread 5374: XXXX 1714555872572, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872672 XXXX 1714555872672, Thread 5374: XXXX 1714555872672, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872672 XXXX 1714555872672, Thread 5374: XXXX 1714555872672, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872773 XXXX 1714555872773, Thread 5374: XXXX 1714555872773, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872775 XXXX 1714555872775, Thread 5374: XXXX 1714555872775, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555872889 XXXX 1714555872889, Thread 5374: XXXX 1714555872889, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555872890 XXXX 1714555872890, Thread 5374: XXXX 1714555872890, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873005 XXXX 1714555873005, Thread 5374: XXXX 1714555873005, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873007 XXXX 1714555873007, Thread 5374: XXXX 1714555873007, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873122 XXXX 1714555873122, Thread 5374: XXXX 1714555873122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873123 XXXX 1714555873123, Thread 5374: XXXX 1714555873123, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873237 XXXX 1714555873237, Thread 5374: XXXX 1714555873237, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873239 XXXX 1714555873239, Thread 5374: XXXX 1714555873239, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873338 XXXX 1714555873338, Thread 5374: XXXX 1714555873338, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873339 XXXX 1714555873339, Thread 5374: XXXX 1714555873339, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873439 XXXX 1714555873439, Thread 5374: XXXX 1714555873439, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873440 XXXX 1714555873440, Thread 5374: XXXX 1714555873440, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873555 XXXX 1714555873555, Thread 5374: XXXX 1714555873555, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873557 XXXX 1714555873557, Thread 5374: XXXX 1714555873557, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873671 XXXX 1714555873671, Thread 5374: XXXX 1714555873671, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873672 XXXX 1714555873672, Thread 5374: XXXX 1714555873672, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873772 XXXX 1714555873772, Thread 5374: XXXX 1714555873772, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873773 XXXX 1714555873773, Thread 5374: XXXX 1714555873773, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873872 XXXX 1714555873872, Thread 5374: XXXX 1714555873872, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873874 XXXX 1714555873874, Thread 5374: XXXX 1714555873874, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555873988 XXXX 1714555873988, Thread 5374: XXXX 1714555873988, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555873989 XXXX 1714555873989, Thread 5374: XXXX 1714555873989, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874089 XXXX 1714555874089, Thread 5374: XXXX 1714555874089, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874090 XXXX 1714555874090, Thread 5374: XXXX 1714555874090, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874205 XXXX 1714555874205, Thread 5374: XXXX 1714555874205, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874207 XXXX 1714555874207, Thread 5374: XXXX 1714555874207, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874322 XXXX 1714555874322, Thread 5374: XXXX 1714555874322, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874323 XXXX 1714555874323, Thread 5374: XXXX 1714555874323, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874438 XXXX 1714555874438, Thread 5374: XXXX 1714555874438, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874440 XXXX 1714555874440, Thread 5374: XXXX 1714555874440, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874539 XXXX 1714555874539, Thread 5374: XXXX 1714555874539, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874541 XXXX 1714555874541, Thread 5374: XXXX 1714555874541, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874639 XXXX 1714555874639, Thread 5374: XXXX 1714555874639, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874641 XXXX 1714555874641, Thread 5374: XXXX 1714555874641, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874755 XXXX 1714555874755, Thread 5374: XXXX 1714555874755, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874757 XXXX 1714555874757, Thread 5374: XXXX 1714555874757, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874856 XXXX 1714555874856, Thread 5374: XXXX 1714555874856, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874857 XXXX 1714555874857, Thread 5374: XXXX 1714555874857, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555874956 XXXX 1714555874956, Thread 5374: XXXX 1714555874956, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555874958 XXXX 1714555874958, Thread 5374: XXXX 1714555874958, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875071 XXXX 1714555875071, Thread 5374: XXXX 1714555875071, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875072 XXXX 1714555875072, Thread 5374: XXXX 1714555875072, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875172 XXXX 1714555875172, Thread 5374: XXXX 1714555875172, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875173 XXXX 1714555875173, Thread 5374: XXXX 1714555875173, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875287 XXXX 1714555875287, Thread 5374: XXXX 1714555875287, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875289 XXXX 1714555875289, Thread 5374: XXXX 1714555875289, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875388 XXXX 1714555875388, Thread 5374: XXXX 1714555875388, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875390 XXXX 1714555875390, Thread 5374: XXXX 1714555875390, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875503 XXXX 1714555875503, Thread 5374: XXXX 1714555875503, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875505 XXXX 1714555875504, Thread 5374: XXXX 1714555875504, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875605 XXXX 1714555875605, Thread 5374: XXXX 1714555875605, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875606 XXXX 1714555875606, Thread 5374: XXXX 1714555875606, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875706 XXXX 1714555875706, Thread 5374: XXXX 1714555875706, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875708 XXXX 1714555875708, Thread 5374: XXXX 1714555875708, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875822 XXXX 1714555875822, Thread 5374: XXXX 1714555875822, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875822 XXXX 1714555875822, Thread 5374: XXXX 1714555875822, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555875923 XXXX 1714555875923, Thread 5374: XXXX 1714555875923, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555875925 XXXX 1714555875925, Thread 5374: XXXX 1714555875925, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876036 XXXX 1714555876036, Thread 5374: XXXX 1714555876036, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876037 XXXX 1714555876037, Thread 5374: XXXX 1714555876037, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876139 XXXX 1714555876139, Thread 5374: XXXX 1714555876139, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876140 XXXX 1714555876140, Thread 5374: XXXX 1714555876140, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876239 XXXX 1714555876239, Thread 5374: XXXX 1714555876239, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876240 XXXX 1714555876240, Thread 5374: XXXX 1714555876240, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876353 XXXX 1714555876353, Thread 5374: XXXX 1714555876353, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876355 XXXX 1714555876355, Thread 5374: XXXX 1714555876355, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876456 XXXX 1714555876456, Thread 5374: XXXX 1714555876456, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876457 XXXX 1714555876457, Thread 5374: XXXX 1714555876457, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876572 XXXX 1714555876572, Thread 5374: XXXX 1714555876571, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876572 XXXX 1714555876572, Thread 5374: XXXX 1714555876572, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876672 XXXX 1714555876672, Thread 5374: XXXX 1714555876672, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876674 XXXX 1714555876674, Thread 5374: XXXX 1714555876674, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876787 XXXX 1714555876787, Thread 5374: XXXX 1714555876787, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876789 XXXX 1714555876789, Thread 5374: XXXX 1714555876789, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555876889 XXXX 1714555876889, Thread 5374: XXXX 1714555876889, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555876890 XXXX 1714555876890, Thread 5374: XXXX 1714555876890, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877002 XXXX 1714555877002, Thread 5374: XXXX 1714555877002, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877003 XXXX 1714555877003, Thread 5374: XXXX 1714555877003, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877105 XXXX 1714555877105, Thread 5374: XXXX 1714555877105, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877105 XXXX 1714555877105, Thread 5374: XXXX 1714555877105, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877205 XXXX 1714555877205, Thread 5374: XXXX 1714555877205, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877206 XXXX 1714555877206, Thread 5374: XXXX 1714555877206, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877320 XXXX 1714555877320, Thread 5374: XXXX 1714555877320, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877322 XXXX 1714555877322, Thread 5374: XXXX 1714555877322, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877420 XXXX 1714555877420, Thread 5374: XXXX 1714555877420, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877422 XXXX 1714555877422, Thread 5374: XXXX 1714555877422, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877522 XXXX 1714555877522, Thread 5374: XXXX 1714555877522, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877523 XXXX 1714555877523, Thread 5374: XXXX 1714555877523, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877622 XXXX 1714555877622, Thread 5374: XXXX 1714555877622, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877623 XXXX 1714555877623, Thread 5374: XXXX 1714555877623, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877739 XXXX 1714555877739, Thread 5374: XXXX 1714555877739, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877739 XXXX 1714555877739, Thread 5374: XXXX 1714555877739, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877855 XXXX 1714555877855, Thread 5374: XXXX 1714555877855, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877857 XXXX 1714555877857, Thread 5374: XXXX 1714555877857, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555877956 XXXX 1714555877956, Thread 5374: XXXX 1714555877956, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555877957 XXXX 1714555877957, Thread 5374: XXXX 1714555877957, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878072 XXXX 1714555878071, Thread 5374: XXXX 1714555878071, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878072 XXXX 1714555878072, Thread 5374: XXXX 1714555878072, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878172 XXXX 1714555878172, Thread 5374: XXXX 1714555878172, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878173 XXXX 1714555878173, Thread 5374: XXXX 1714555878173, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878273 XXXX 1714555878273, Thread 5374: XXXX 1714555878273, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878274 XXXX 1714555878274, Thread 5374: XXXX 1714555878274, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878389 XXXX 1714555878389, Thread 5374: XXXX 1714555878389, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878389 XXXX 1714555878389, Thread 5374: XXXX 1714555878389, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878489 XXXX 1714555878489, Thread 5374: XXXX 1714555878489, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878489 XXXX 1714555878489, Thread 5374: XXXX 1714555878489, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878605 XXXX 1714555878605, Thread 5374: XXXX 1714555878605, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878607 XXXX 1714555878607, Thread 5374: XXXX 1714555878607, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878722 XXXX 1714555878722, Thread 5374: XXXX 1714555878722, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878723 XXXX 1714555878723, Thread 5374: XXXX 1714555878723, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878839 XXXX 1714555878839, Thread 5374: XXXX 1714555878839, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878840 XXXX 1714555878840, Thread 5374: XXXX 1714555878840, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555878956 XXXX 1714555878956, Thread 5374: XXXX 1714555878956, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555878957 XXXX 1714555878957, Thread 5374: XXXX 1714555878957, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879070 XXXX 1714555879070, Thread 5374: XXXX 1714555879070, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879072 XXXX 1714555879072, Thread 5374: XXXX 1714555879072, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879171 XXXX 1714555879171, Thread 5374: XXXX 1714555879171, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879172 XXXX 1714555879172, Thread 5374: XXXX 1714555879172, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879272 XXXX 1714555879272, Thread 5374: XXXX 1714555879272, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879273 XXXX 1714555879273, Thread 5374: XXXX 1714555879273, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879388 XXXX 1714555879388, Thread 5374: XXXX 1714555879388, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879389 XXXX 1714555879389, Thread 5374: XXXX 1714555879389, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879502 XXXX 1714555879502, Thread 5374: XXXX 1714555879502, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879503 XXXX 1714555879503, Thread 5374: XXXX 1714555879503, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879606 XXXX 1714555879606, Thread 5374: XXXX 1714555879606, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879606 XXXX 1714555879606, Thread 5374: XXXX 1714555879606, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879722 XXXX 1714555879722, Thread 5374: XXXX 1714555879722, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879722 XXXX 1714555879722, Thread 5374: XXXX 1714555879722, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879822 XXXX 1714555879822, Thread 5374: XXXX 1714555879822, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879823 XXXX 1714555879823, Thread 5374: XXXX 1714555879823, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555879938 XXXX 1714555879938, Thread 5374: XXXX 1714555879938, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555879940 XXXX 1714555879940, Thread 5374: XXXX 1714555879940, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880039 XXXX 1714555880039, Thread 5374: XXXX 1714555880039, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880040 XXXX 1714555880040, Thread 5374: XXXX 1714555880040, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880155 XXXX 1714555880155, Thread 5374: XXXX 1714555880155, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880156 XXXX 1714555880156, Thread 5374: XXXX 1714555880156, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880270 XXXX 1714555880270, Thread 5374: XXXX 1714555880270, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880272 XXXX 1714555880272, Thread 5374: XXXX 1714555880272, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880373 XXXX 1714555880373, Thread 5374: XXXX 1714555880373, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880374 XXXX 1714555880374, Thread 5374: XXXX 1714555880374, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880486 XXXX 1714555880486, Thread 5374: XXXX 1714555880486, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880488 XXXX 1714555880488, Thread 5374: XXXX 1714555880488, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880588 XXXX 1714555880588, Thread 5374: XXXX 1714555880588, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880589 XXXX 1714555880589, Thread 5374: XXXX 1714555880589, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880701 XXXX 1714555880701, Thread 5374: XXXX 1714555880701, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880702 XXXX 1714555880702, Thread 5374: XXXX 1714555880702, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880803 XXXX 1714555880803, Thread 5374: XXXX 1714555880803, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880805 XXXX 1714555880805, Thread 5374: XXXX 1714555880805, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555880905 XXXX 1714555880905, Thread 5374: XXXX 1714555880905, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555880907 XXXX 1714555880907, Thread 5374: XXXX 1714555880907, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881006 XXXX 1714555881006, Thread 5374: XXXX 1714555881006, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881007 XXXX 1714555881007, Thread 5374: XXXX 1714555881007, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881120 XXXX 1714555881120, Thread 5374: XXXX 1714555881120, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881122 XXXX 1714555881122, Thread 5374: XXXX 1714555881122, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881222 XXXX 1714555881222, Thread 5374: XXXX 1714555881222, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881223 XXXX 1714555881223, Thread 5374: XXXX 1714555881223, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881339 XXXX 1714555881339, Thread 5374: XXXX 1714555881339, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881340 XXXX 1714555881340, Thread 5374: XXXX 1714555881340, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881452 XXXX 1714555881452, Thread 5374: XXXX 1714555881452, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881453 XXXX 1714555881453, Thread 5374: XXXX 1714555881453, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881556 XXXX 1714555881556, Thread 5374: XXXX 1714555881556, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881557 XXXX 1714555881557, Thread 5374: XXXX 1714555881557, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881655 XXXX 1714555881655, Thread 5374: XXXX 1714555881655, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881656 XXXX 1714555881656, Thread 5374: XXXX 1714555881656, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881770 XXXX 1714555881770, Thread 5374: XXXX 1714555881770, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881772 XXXX 1714555881772, Thread 5374: XXXX 1714555881772, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881872 XXXX 1714555881872, Thread 5374: XXXX 1714555881872, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881873 XXXX 1714555881873, Thread 5374: XXXX 1714555881873, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555881989 XXXX 1714555881989, Thread 5374: XXXX 1714555881989, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555881989 XXXX 1714555881989, Thread 5374: XXXX 1714555881989, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882104 XXXX 1714555882104, Thread 5374: XXXX 1714555882104, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882106 XXXX 1714555882106, Thread 5374: XXXX 1714555882106, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882205 XXXX 1714555882205, Thread 5374: XXXX 1714555882205, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882205 XXXX 1714555882205, Thread 5374: XXXX 1714555882205, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882320 XXXX 1714555882320, Thread 5374: XXXX 1714555882320, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882322 XXXX 1714555882322, Thread 5374: XXXX 1714555882322, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882420 XXXX 1714555882420, Thread 5374: XXXX 1714555882420, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882422 XXXX 1714555882422, Thread 5374: XXXX 1714555882422, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882521 XXXX 1714555882521, Thread 5374: XXXX 1714555882521, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882522 XXXX 1714555882522, Thread 5374: XXXX 1714555882522, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882622 XXXX 1714555882622, Thread 5374: XXXX 1714555882622, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882623 XXXX 1714555882623, Thread 5374: XXXX 1714555882623, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882738 XXXX 1714555882738, Thread 5374: XXXX 1714555882738, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882740 XXXX 1714555882740, Thread 5374: XXXX 1714555882740, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882838 XXXX 1714555882838, Thread 5374: XXXX 1714555882838, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882840 XXXX 1714555882840, Thread 5374: XXXX 1714555882840, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555882955 XXXX 1714555882955, Thread 5374: XXXX 1714555882955, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555882956 XXXX 1714555882956, Thread 5374: XXXX 1714555882956, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883070 XXXX 1714555883070, Thread 5374: XXXX 1714555883070, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883072 XXXX 1714555883072, Thread 5374: XXXX 1714555883072, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883171 XXXX 1714555883171, Thread 5374: XXXX 1714555883171, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883172 XXXX 1714555883172, Thread 5374: XXXX 1714555883172, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883272 XXXX 1714555883272, Thread 5374: XXXX 1714555883272, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883273 XXXX 1714555883273, Thread 5374: XXXX 1714555883273, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883373 XXXX 1714555883373, Thread 5374: XXXX 1714555883373, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883374 XXXX 1714555883374, Thread 5374: XXXX 1714555883374, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883486 XXXX 1714555883486, Thread 5374: XXXX 1714555883486, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883488 XXXX 1714555883488, Thread 5374: XXXX 1714555883488, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883589 XXXX 1714555883588, Thread 5374: XXXX 1714555883588, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883590 XXXX 1714555883590, Thread 5374: XXXX 1714555883590, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883689 XXXX 1714555883689, Thread 5374: XXXX 1714555883689, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883690 XXXX 1714555883690, Thread 5374: XXXX 1714555883690, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883805 XXXX 1714555883805, Thread 5374: XXXX 1714555883805, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883807 XXXX 1714555883807, Thread 5374: XXXX 1714555883807, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555883920 XXXX 1714555883920, Thread 5374: XXXX 1714555883920, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555883922 XXXX 1714555883922, Thread 5374: XXXX 1714555883922, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884021 XXXX 1714555884021, Thread 5374: XXXX 1714555884021, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884022 XXXX 1714555884022, Thread 5374: XXXX 1714555884022, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884122 XXXX 1714555884122, Thread 5374: XXXX 1714555884122, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884122 XXXX 1714555884122, Thread 5374: XXXX 1714555884122, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884222 XXXX 1714555884222, Thread 5374: XXXX 1714555884222, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884223 XXXX 1714555884223, Thread 5374: XXXX 1714555884223, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884338 XXXX 1714555884338, Thread 5374: XXXX 1714555884338, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884340 XXXX 1714555884340, Thread 5374: XXXX 1714555884340, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884455 XXXX 1714555884455, Thread 5374: XXXX 1714555884455, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884455 XXXX 1714555884455, Thread 5374: XXXX 1714555884455, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884555 XXXX 1714555884555, Thread 5374: XXXX 1714555884555, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884556 XXXX 1714555884556, Thread 5374: XXXX 1714555884556, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884656 XXXX 1714555884656, Thread 5374: XXXX 1714555884656, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884657 XXXX 1714555884657, Thread 5374: XXXX 1714555884657, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884771 XXXX 1714555884771, Thread 5374: XXXX 1714555884771, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884772 XXXX 1714555884772, Thread 5374: XXXX 1714555884772, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555884887 XXXX 1714555884887, Thread 5374: XXXX 1714555884887, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555884889 XXXX 1714555884889, Thread 5374: XXXX 1714555884889, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885002 XXXX 1714555885002, Thread 5374: XXXX 1714555885002, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885003 XXXX 1714555885003, Thread 5374: XXXX 1714555885003, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885103 XXXX 1714555885103, Thread 5374: XXXX 1714555885103, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885105 XXXX 1714555885105, Thread 5374: XXXX 1714555885105, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885205 XXXX 1714555885205, Thread 5374: XXXX 1714555885205, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885206 XXXX 1714555885206, Thread 5374: XXXX 1714555885206, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885321 XXXX 1714555885321, Thread 5374: XXXX 1714555885321, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885323 XXXX 1714555885323, Thread 5374: XXXX 1714555885323, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885422 XXXX 1714555885422, Thread 5374: XXXX 1714555885422, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885423 XXXX 1714555885423, Thread 5374: XXXX 1714555885423, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885538 XXXX 1714555885537, Thread 5374: XXXX 1714555885537, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885539 XXXX 1714555885539, Thread 5374: XXXX 1714555885539, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885639 XXXX 1714555885639, Thread 5374: XXXX 1714555885639, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885640 XXXX 1714555885640, Thread 5374: XXXX 1714555885639, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885755 XXXX 1714555885755, Thread 5374: XXXX 1714555885755, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885755 XXXX 1714555885755, Thread 5374: XXXX 1714555885755, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885870 XXXX 1714555885870, Thread 5374: XXXX 1714555885870, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885872 XXXX 1714555885872, Thread 5374: XXXX 1714555885872, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555885971 XXXX 1714555885971, Thread 5374: XXXX 1714555885971, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555885972 XXXX 1714555885972, Thread 5374: XXXX 1714555885972, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886072 XXXX 1714555886072, Thread 5374: XXXX 1714555886072, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886073 XXXX 1714555886073, Thread 5374: XXXX 1714555886073, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886188 XXXX 1714555886188, Thread 5374: XXXX 1714555886188, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886189 XXXX 1714555886189, Thread 5374: XXXX 1714555886189, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886289 XXXX 1714555886289, Thread 5374: XXXX 1714555886289, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886290 XXXX 1714555886290, Thread 5374: XXXX 1714555886290, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886403 XXXX 1714555886403, Thread 5374: XXXX 1714555886403, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886405 XXXX 1714555886405, Thread 5374: XXXX 1714555886405, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886505 XXXX 1714555886505, Thread 5374: XXXX 1714555886505, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886505 XXXX 1714555886505, Thread 5374: XXXX 1714555886505, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886619 XXXX 1714555886619, Thread 5374: XXXX 1714555886619, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886621 XXXX 1714555886621, Thread 5374: XXXX 1714555886621, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886722 XXXX 1714555886722, Thread 5374: XXXX 1714555886722, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886722 XXXX 1714555886722, Thread 5374: XXXX 1714555886722, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886822 XXXX 1714555886822, Thread 5374: XXXX 1714555886822, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886823 XXXX 1714555886823, Thread 5374: XXXX 1714555886823, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555886938 XXXX 1714555886938, Thread 5374: XXXX 1714555886938, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555886939 XXXX 1714555886939, Thread 5374: XXXX 1714555886939, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887055 XXXX 1714555887055, Thread 5374: XXXX 1714555887055, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887056 XXXX 1714555887056, Thread 5374: XXXX 1714555887056, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887171 XXXX 1714555887171, Thread 5374: XXXX 1714555887171, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887173 XXXX 1714555887173, Thread 5374: XXXX 1714555887173, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887287 XXXX 1714555887287, Thread 5374: XXXX 1714555887287, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887289 XXXX 1714555887289, Thread 5374: XXXX 1714555887289, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887389 XXXX 1714555887389, Thread 5374: XXXX 1714555887389, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887390 XXXX 1714555887390, Thread 5374: XXXX 1714555887390, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887505 XXXX 1714555887505, Thread 5374: XXXX 1714555887505, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887506 XXXX 1714555887506, Thread 5374: XXXX 1714555887506, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887620 XXXX 1714555887620, Thread 5374: XXXX 1714555887620, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887622 XXXX 1714555887622, Thread 5374: XXXX 1714555887622, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887721 XXXX 1714555887721, Thread 5374: XXXX 1714555887721, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887723 XXXX 1714555887723, Thread 5374: XXXX 1714555887723, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887822 XXXX 1714555887822, Thread 5374: XXXX 1714555887822, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887823 XXXX 1714555887823, Thread 5374: XXXX 1714555887823, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555887937 XXXX 1714555887937, Thread 5374: XXXX 1714555887937, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555887939 XXXX 1714555887939, Thread 5374: XXXX 1714555887939, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888039 XXXX 1714555888039, Thread 5374: XXXX 1714555888039, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888040 XXXX 1714555888040, Thread 5374: XXXX 1714555888040, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888139 XXXX 1714555888139, Thread 5374: XXXX 1714555888139, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888141 XXXX 1714555888141, Thread 5374: XXXX 1714555888141, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888255 XXXX 1714555888255, Thread 5374: XXXX 1714555888255, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888255 XXXX 1714555888255, Thread 5374: XXXX 1714555888255, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888372 XXXX 1714555888372, Thread 5374: XXXX 1714555888372, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888373 XXXX 1714555888373, Thread 5374: XXXX 1714555888373, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888487 XXXX 1714555888487, Thread 5374: XXXX 1714555888487, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888489 XXXX 1714555888489, Thread 5374: XXXX 1714555888489, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888589 XXXX 1714555888589, Thread 5374: XXXX 1714555888589, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888590 XXXX 1714555888590, Thread 5374: XXXX 1714555888590, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888705 XXXX 1714555888705, Thread 5374: XXXX 1714555888705, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888705 XXXX 1714555888705, Thread 5374: XXXX 1714555888705, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888805 XXXX 1714555888805, Thread 5374: XXXX 1714555888805, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888806 XXXX 1714555888806, Thread 5374: XXXX 1714555888806, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555888921 XXXX 1714555888921, Thread 5374: XXXX 1714555888921, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555888923 XXXX 1714555888923, Thread 5374: XXXX 1714555888923, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889038 XXXX 1714555889038, Thread 5374: XXXX 1714555889037, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889039 XXXX 1714555889039, Thread 5374: XXXX 1714555889039, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889139 XXXX 1714555889139, Thread 5374: XXXX 1714555889139, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889140 XXXX 1714555889140, Thread 5374: XXXX 1714555889140, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889255 XXXX 1714555889255, Thread 5374: XXXX 1714555889255, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889255 XXXX 1714555889255, Thread 5374: XXXX 1714555889255, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889355 XXXX 1714555889355, Thread 5374: XXXX 1714555889355, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889356 XXXX 1714555889356, Thread 5374: XXXX 1714555889356, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889470 XXXX 1714555889470, Thread 5374: XXXX 1714555889470, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889471 XXXX 1714555889471, Thread 5374: XXXX 1714555889471, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889571 XXXX 1714555889571, Thread 5374: XXXX 1714555889571, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889572 XXXX 1714555889572, Thread 5374: XXXX 1714555889572, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889672 XXXX 1714555889672, Thread 5374: XXXX 1714555889672, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889673 XXXX 1714555889673, Thread 5374: XXXX 1714555889673, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889786 XXXX 1714555889786, Thread 5374: XXXX 1714555889786, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889788 XXXX 1714555889788, Thread 5374: XXXX 1714555889788, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889887 XXXX 1714555889887, Thread 5374: XXXX 1714555889887, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889888 XXXX 1714555889888, Thread 5374: XXXX 1714555889888, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555889988 XXXX 1714555889988, Thread 5374: XXXX 1714555889988, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555889990 XXXX 1714555889990, Thread 5374: XXXX 1714555889990, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890089 XXXX 1714555890089, Thread 5374: XXXX 1714555890089, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890091 XXXX 1714555890091, Thread 5374: XXXX 1714555890091, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890189 XXXX 1714555890189, Thread 5374: XXXX 1714555890189, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890190 XXXX 1714555890190, Thread 5374: XXXX 1714555890190, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890304 XXXX 1714555890304, Thread 5374: XXXX 1714555890304, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890306 XXXX 1714555890306, Thread 5374: XXXX 1714555890306, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890405 XXXX 1714555890405, Thread 5374: XXXX 1714555890405, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890406 XXXX 1714555890406, Thread 5374: XXXX 1714555890406, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890506 XXXX 1714555890506, Thread 5374: XXXX 1714555890506, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890507 XXXX 1714555890507, Thread 5374: XXXX 1714555890507, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890622 XXXX 1714555890622, Thread 5374: XXXX 1714555890622, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890622 XXXX 1714555890622, Thread 5374: XXXX 1714555890622, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890722 XXXX 1714555890722, Thread 5374: XXXX 1714555890722, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890723 XXXX 1714555890723, Thread 5374: XXXX 1714555890723, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890838 XXXX 1714555890838, Thread 5374: XXXX 1714555890838, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890840 XXXX 1714555890840, Thread 5374: XXXX 1714555890840, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555890939 XXXX 1714555890939, Thread 5374: XXXX 1714555890939, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555890940 XXXX 1714555890940, Thread 5374: XXXX 1714555890940, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891055 XXXX 1714555891055, Thread 5374: XXXX 1714555891055, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891055 XXXX 1714555891055, Thread 5374: XXXX 1714555891055, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891170 XXXX 1714555891170, Thread 5374: XXXX 1714555891170, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891172 XXXX 1714555891172, Thread 5374: XXXX 1714555891172, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891272 XXXX 1714555891272, Thread 5374: XXXX 1714555891272, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891273 XXXX 1714555891273, Thread 5374: XXXX 1714555891273, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891388 XXXX 1714555891388, Thread 5374: XXXX 1714555891388, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891390 XXXX 1714555891390, Thread 5374: XXXX 1714555891390, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891489 XXXX 1714555891489, Thread 5374: XXXX 1714555891489, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891491 XXXX 1714555891491, Thread 5374: XXXX 1714555891491, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891606 XXXX 1714555891606, Thread 5374: XXXX 1714555891606, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891607 XXXX 1714555891607, Thread 5374: XXXX 1714555891607, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891722 XXXX 1714555891722, Thread 5374: XXXX 1714555891722, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891723 XXXX 1714555891723, Thread 5374: XXXX 1714555891723, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891837 XXXX 1714555891837, Thread 5374: XXXX 1714555891837, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891838 XXXX 1714555891838, Thread 5374: XXXX 1714555891838, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555891939 XXXX 1714555891939, Thread 5374: XXXX 1714555891939, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555891940 XXXX 1714555891940, Thread 5374: XXXX 1714555891940, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892055 XXXX 1714555892055, Thread 5374: XXXX 1714555892055, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892056 XXXX 1714555892056, Thread 5374: XXXX 1714555892056, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892169 XXXX 1714555892169, Thread 5374: XXXX 1714555892169, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892170 XXXX 1714555892170, Thread 5374: XXXX 1714555892170, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892270 XXXX 1714555892270, Thread 5374: XXXX 1714555892270, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892271 XXXX 1714555892271, Thread 5374: XXXX 1714555892271, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892372 XXXX 1714555892372, Thread 5374: XXXX 1714555892372, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892373 XXXX 1714555892373, Thread 5374: XXXX 1714555892373, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892486 XXXX 1714555892486, Thread 5374: XXXX 1714555892486, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892488 XXXX 1714555892488, Thread 5374: XXXX 1714555892488, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892589 XXXX 1714555892589, Thread 5374: XXXX 1714555892589, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892590 XXXX 1714555892590, Thread 5374: XXXX 1714555892590, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892689 XXXX 1714555892689, Thread 5374: XXXX 1714555892689, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892690 XXXX 1714555892690, Thread 5374: XXXX 1714555892690, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892805 XXXX 1714555892805, Thread 5374: XXXX 1714555892805, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892805 XXXX 1714555892805, Thread 5374: XXXX 1714555892805, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555892921 XXXX 1714555892921, Thread 5374: XXXX 1714555892921, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555892922 XXXX 1714555892922, Thread 5374: XXXX 1714555892922, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893022 XXXX 1714555893022, Thread 5374: XXXX 1714555893022, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893024 XXXX 1714555893024, Thread 5374: XXXX 1714555893024, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893138 XXXX 1714555893138, Thread 5374: XXXX 1714555893138, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893140 XXXX 1714555893140, Thread 5374: XXXX 1714555893140, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893255 XXXX 1714555893255, Thread 5374: XXXX 1714555893255, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893256 XXXX 1714555893256, Thread 5374: XXXX 1714555893256, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893355 XXXX 1714555893355, Thread 5374: XXXX 1714555893355, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893356 XXXX 1714555893356, Thread 5374: XXXX 1714555893356, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893471 XXXX 1714555893471, Thread 5374: XXXX 1714555893471, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893472 XXXX 1714555893472, Thread 5374: XXXX 1714555893472, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893572 XXXX 1714555893572, Thread 5374: XXXX 1714555893572, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893574 XXXX 1714555893574, Thread 5374: XXXX 1714555893574, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893689 XXXX 1714555893689, Thread 5374: XXXX 1714555893689, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893690 XXXX 1714555893690, Thread 5374: XXXX 1714555893690, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893788 XXXX 1714555893788, Thread 5374: XXXX 1714555893788, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893790 XXXX 1714555893790, Thread 5374: XXXX 1714555893790, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555893889 XXXX 1714555893889, Thread 5374: XXXX 1714555893889, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555893890 XXXX 1714555893890, Thread 5374: XXXX 1714555893890, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894005 XXXX 1714555894005, Thread 5374: XXXX 1714555894005, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894006 XXXX 1714555894006, Thread 5374: XXXX 1714555894006, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894105 XXXX 1714555894105, Thread 5374: XXXX 1714555894105, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894107 XXXX 1714555894107, Thread 5374: XXXX 1714555894107, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894206 XXXX 1714555894206, Thread 5374: XXXX 1714555894206, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894207 XXXX 1714555894207, Thread 5374: XXXX 1714555894207, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894322 XXXX 1714555894322, Thread 5374: XXXX 1714555894322, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894323 XXXX 1714555894323, Thread 5374: XXXX 1714555894323, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894438 XXXX 1714555894438, Thread 5374: XXXX 1714555894437, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894439 XXXX 1714555894439, Thread 5374: XXXX 1714555894439, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894538 XXXX 1714555894538, Thread 5374: XXXX 1714555894538, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894539 XXXX 1714555894539, Thread 5374: XXXX 1714555894539, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894639 XXXX 1714555894639, Thread 5374: XXXX 1714555894639, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894640 XXXX 1714555894640, Thread 5374: XXXX 1714555894640, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894756 XXXX 1714555894756, Thread 5374: XXXX 1714555894755, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894757 XXXX 1714555894757, Thread 5374: XXXX 1714555894757, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894871 XXXX 1714555894871, Thread 5374: XXXX 1714555894871, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894872 XXXX 1714555894872, Thread 5374: XXXX 1714555894872, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555894986 XXXX 1714555894986, Thread 5374: XXXX 1714555894986, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555894988 XXXX 1714555894988, Thread 5374: XXXX 1714555894988, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555895088 XXXX 1714555895088, Thread 5374: XXXX 1714555895088, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555895090 XXXX 1714555895090, Thread 5374: XXXX 1714555895090, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555895203 XXXX 1714555895203, Thread 5374: XXXX 1714555895203, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555895205 XXXX 1714555895205, Thread 5374: XXXX 1714555895205, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555895306 XXXX 1714555895306, Thread 5374: XXXX 1714555895306, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555895307 XXXX 1714555895307, Thread 5374: XXXX 1714555895307, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555895421 XXXX 1714555895421, Thread 5374: XXXX 1714555895421, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555895423 XXXX 1714555895423, Thread 5374: XXXX 1714555895423, Exiting Thread 5374: Commands::runScriptBasic  
+5374 1714555895522 XXXX 1714555895522, Thread 5374: XXXX 1714555895522, Entering Thread 5374: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+5374 1714555895527 XXXX 1714555895527, Thread 5374: com.Send returned false 
+5374 1714555895527 XXXX 1714555895527, Thread 5374: transfer: exception after writeHeaderAndGetResult null 
+5374 1714555895528 XXXX 1714555895528, Thread 5374: XXXX 1714555895528, Entering Thread 5374: ToolCommUsb::recoverFromProtocolError, type = NO_SCRIPT  
+5374 1714555895528 XXXX 1714555895528, Thread 5374: Send Abort Script Engine Command 
+5374 1714555895528 XXXX 1714555895528, Thread 5374: XXXX 1714555895528, Entering Thread 5374: ToolCommUsb::killScriptEngine  
+5374 1714555895532 XXXX 1714555895532, Thread 5374: com.Send returned false 
+5374 1714555895532 XXXX 1714555895532, Thread 5374: Failed sending Abort Script Engine Command. Set nuclear option = true 
+5374 1714555895532 XXXX 1714555895532, Thread 5374: About to nuke 
+5374 1714555895532 XXXX 1714555895532, Thread 5374: XXXX 1714555895532, Entering Thread 5374: ToolCommUsb::nuclearOption  
+5374 1714555895534 XXXX 1714555895534, Thread 5374: com.Send returned false 
