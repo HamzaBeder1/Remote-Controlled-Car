@@ -15,28 +15,37 @@
 #pragma config FNOSC = FRCPLL      // Oscillator Select (Fast RC Oscillator with PLL module (FRCPLL))
 
 #include "xc.h"
-#include "delay.h"
+#include <stdbool.h>
 
 volatile int buffer[20];
 volatile int front;
-volatile int toggle = 0;
-volatile unsigned long int overflowtmr;
+bool toggle = 0;
+bool stopMotion = 0;
+volatile unsigned long int currTime = 0;
+volatile unsigned long int finalTime = 0;
+volatile unsigned long int overflowtmr = 0;
+volatile unsigned long int distanceThreshold = 1;
 void setup(){
     CLKDIVbits.RCDIV = 0;
-    TRISAbits.TRISA4 = 1;  //input for echo
+    TRISBbits.TRISB4 = 1;  //input for echo
     TRISBbits.TRISB5 = 0; //output for trig 
     LATBbits.LATB5 = 0;
     
     //IC1 setup
     IC1CONbits.ICTMR = 0; //timer 3
-    IC1CONbits.ICI = 0; //interrupt on every capture event
-    IC1CON = IC1CON | 0x8000; //set bit 15 on to turn IC on
+    IC1CONbits.ICM = 1;
+    
+    //PPS for IC1
+    __builtin_write_OSCCONL(OSCCON & 0xbf);// unlock PPS
+    RPINR7bits.IC1R = 4;  // RP4 (pin 11)
+    __builtin_write_OSCCONL(OSCCON | 0x40); // lock   PPS
     
     T3CON = 0;
     TMR3 = 0;
     T3CONbits.TCKPS = 3;
     _T3IF = 0;
     PR3 = 65535;
+    T3CONbits.TON = 1;
     
     IFS0bits.T3IF = 0;
     IEC0bits.T3IE = 1;
@@ -47,13 +56,29 @@ void setup(){
 }
 
 void __attribute__((interrupt, auto_psv)) _IC1Interrupt(){
+    IFS0bits.IC1IF = 0;
     if(toggle == 0){
+        currTime = TMR3 + 65536*overflowtmr;
+        toggle = 1;
+    }
+    else{
+        finalTime = TMR3 + 65536*overflowtmr;
+        overflowtmr = 0;
+        TMR3 = 0;
+        toggle = 0;
+        
+        finalTime = (finalTime - currTime)*(256)/(16000000);
+        volatile unsigned long int distance = finalTime*(340)/(148*2);
+        if(distance <= distanceThreshold)
+            stopMotion = 1;
+        else
+            stopMotion = 0;
     }
 }
 
 void __attribute__((interrupt, auto_psv)) _T3Interrupt(){
     IFS0bits.T3IF = 0;
-    
+    overflowtmr++;
 }
 
 void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
@@ -136,7 +161,7 @@ int main(void) {
     setup();
     sendTrig();
     while(1){
-        sendTrig();
-        delay_ms(2000);
+       sendTrig();
+       delay_ms(2000);
     }
 }
