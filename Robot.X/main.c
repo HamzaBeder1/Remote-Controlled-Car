@@ -17,58 +17,66 @@
 #include "xc.h"
 #include <stdbool.h>
 
-volatile int buffer[20];
-volatile int front;
-bool toggle = 0;
+
 bool stopMotion = 0;
-volatile unsigned long int currTime = 0;
-volatile unsigned long int finalTime = 0;
-volatile unsigned long int overflowtmr = 0;
-volatile unsigned long int distanceThreshold = 1;
+volatile uint32_t finalTime = 0;
+volatile int overflowtmr = 0;
+int distanceThreshold = 1;
 void setup(){
     CLKDIVbits.RCDIV = 0;
     TRISBbits.TRISB4 = 1;  //input for echo
     TRISBbits.TRISB5 = 0; //output for trig 
     LATBbits.LATB5 = 0;
-    
+
     //IC1 setup
     IC1CONbits.ICTMR = 0; //timer 3
     IC1CONbits.ICM = 1;
-    
+
     //PPS for IC1
     __builtin_write_OSCCONL(OSCCON & 0xbf);// unlock PPS
     RPINR7bits.IC1R = 4;  // RP4 (pin 11)
     __builtin_write_OSCCONL(OSCCON | 0x40); // lock   PPS
-    
+
     T3CON = 0;
     TMR3 = 0;
-    T3CONbits.TCKPS = 3;
-    _T3IF = 0;
+    T3CONbits.TCKPS = 0;
+    _T3IF = 0; //a prescaler of 1 for TMR3
     PR3 = 65535;
     T3CONbits.TON = 1;
-    
+
     IFS0bits.T3IF = 0;
     IEC0bits.T3IE = 1;
-    IPC2bits.T3IP = 5;
+    IPC2bits.T3IP = 3;
     IFS0bits.IC1IF = 0;
     IEC0bits.IC1IE = 1;
-    IPC0bits.IC1IP = 5;
+    IPC0bits.IC1IP = 3;
+
+    //TIMER1 setup
+    T1CON = 0;
+    TMR1 = 0;
+    T1CONbits.TCKPS = 0;
+    _T1IF = 0;
+    PR1 = 160; //for a delay of 10uS
+    T1CONbits.TON = 0;
+
+    IFS0bits.T1IF = 0;
+    IEC0bits.T1IE = 1;
+    IPC0bits.T1IP = 5; //higher priority than the input capture interrupt
+
 }
 
 void __attribute__((interrupt, auto_psv)) _IC1Interrupt(){
     IFS0bits.IC1IF = 0;
-    if(toggle == 0){
-        currTime = TMR3 + 65536*overflowtmr;
-        toggle = 1;
+    if(PORTBbits.RB4 == 1){
+        //reset both TMR3 and overflowtmr
+        TMR3 = 0;
+        overflowtmr = 0;
     }
     else{
-        finalTime = TMR3 + 65536*overflowtmr;
+        finalTime = (TMR3)*625 + overflowtmr*625*65536;
         overflowtmr = 0;
         TMR3 = 0;
-        toggle = 0;
-        
-        finalTime = (finalTime - currTime)*(256)/(16000000);
-        volatile unsigned long int distance = finalTime*(340)/(148*2);
+        uint16_t distance = finalTime/((58)*(10000/10));
         if(distance <= distanceThreshold)
             stopMotion = 1;
         else
@@ -81,10 +89,17 @@ void __attribute__((interrupt, auto_psv)) _T3Interrupt(){
     overflowtmr++;
 }
 
-void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
-{
-    IFS0bits.U1RXIF = 0;
-    buffer[front++] = U1RXREG;
+void __attribute__((interrupt, auto_psv)) _T1Interrupt(){
+    _T1IF = 0;
+    T1CONbits.TON = 0;
+    TMR1 = 0;
+    LATBbits.LATB5 = 0;
+}
+
+
+void sendTrig(){
+    LATBbits.LATB5 = 1;
+    T1CONbits.TON = 1;
 }
 
 void delay_ms(unsigned int ms){
@@ -94,74 +109,10 @@ void delay_ms(unsigned int ms){
     }
 }
 
-void delay_10us(void){
-        int i = 10;
-        while(i-- > 0){
-            asm("repeat #3");
-            asm("nop");
-        }
-}
-
-void sendTrig(){
-    LATBbits.LATB5 = 1;
-    delay_10us();
-    LATBbits.LATB5 = 0;
-}
-
-int getEcho(){
-    sendTrig();
-    
-}
-
-void initUART(){
-    CLKDIVbits.RCDIV = 0;
-    AD1PCFG = 0x9fff;  
-
-    _TRISB6 = 0;  // U1TX output
-    _TRISB10 = 1; // U1RX input
-
-    U1MODE = 0;  
-
-    U1MODEbits.BRGH = 0;
-    U1BRG = 25; //for 38400 baud
-    //U1BRG = 103; 
-    U1MODEbits.UARTEN = 1;
-    U1STAbits.UTXEN = 1;
-    U1MODEbits.UEN = 1;
-    U1MODEbits.PDSEL = 0; //8 bit data and no parity
-    U1MODEbits.STSEL = 0; //one stop bit.
-
-    // Peripheral Pin Select 
-    __builtin_write_OSCCONL(OSCCON & 0xbf);
-    RPOR3bits.RP6R = 3;   
-    RPINR18bits.U1RXR= 10;   
-    __builtin_write_OSCCONL(OSCCON | 0x40); 
-
-    IFS0bits.U1RXIF = 0;
-    IEC0bits.U1RXIE = 1;
-
-    IPC2bits.U1RXIP = 5; //priority of 5
-}
-
-
-void sendData(char data []){
-    int i;
-    for(i = 0; i<strlen(data); i++){
-        U1TXREG = data[i];
-        while(U1STAbits.UTXBF == 1);
-    }
-}
-
 int main(void) {
-    /*initUART();
-    delay_ms(3000);
-    char data[] = "AT+ROLE?\r\n";
-    sendData(data);
-    */   
     setup();
-    sendTrig();
     while(1){
-       sendTrig();
-       delay_ms(2000);
+        sendTrig();
+        delay_ms(2000); //delay for 2 seconds before sending another trig signal.
     }
 }
