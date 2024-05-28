@@ -22,6 +22,8 @@ bool stopMotion = 0;
 volatile uint32_t finalTime = 0;
 volatile int overflowtmr = 0;
 int distanceThreshold = 1;
+volatile int buffer[20];
+volatile int front;
 void setup(){
     CLKDIVbits.RCDIV = 0;
     TRISBbits.TRISB4 = 1;  //input for echo
@@ -63,6 +65,12 @@ void setup(){
     IEC0bits.T1IE = 1;
     IPC0bits.T1IP = 5; //higher priority than the input capture interrupt
 
+}
+
+void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
+{
+    IFS0bits.U1RXIF = 0;
+    buffer[front++] = U1RXREG;
 }
 
 void __attribute__((interrupt, auto_psv)) _IC1Interrupt(){
@@ -109,10 +117,50 @@ void delay_ms(unsigned int ms){
     }
 }
 
+void initUART(){
+    CLKDIVbits.RCDIV = 0;
+    AD1PCFG = 0x9fff;  
+
+    _TRISB6 = 0;  // U1TX output
+    _TRISB10 = 1; // U1RX input
+
+    U1MODE = 0;  
+
+    U1MODEbits.BRGH = 0;
+    U1BRG = 25; //for 38400 baud
+    //U1BRG = 103; uncomment this for 9600 baud.
+    U1MODEbits.UARTEN = 1;
+    U1STAbits.UTXEN = 1;
+    U1MODEbits.UEN = 1;
+    U1MODEbits.PDSEL = 0; //8 bit data and no parity
+    U1MODEbits.STSEL = 0; //one stop bit.
+
+    // Peripheral Pin Select 
+    __builtin_write_OSCCONL(OSCCON & 0xbf);
+    RPOR3bits.RP6R = 3;   
+    RPINR18bits.U1RXR= 10;   
+    __builtin_write_OSCCONL(OSCCON | 0x40); 
+
+    IFS0bits.U1RXIF = 0;
+    IEC0bits.U1RXIE = 1;
+
+    IPC2bits.U1RXIP = 5; //priority of 5
+}
+
+
+void sendData(char data []){
+    int i;
+    for(i = 0; i<strlen(data); i++){
+        U1TXREG = data[i];
+        while(U1STAbits.UTXBF == 1);
+    }
+}
+
 int main(void) {
     setup();
     while(1){
-        sendTrig();
-        delay_ms(2000); //delay for 2 seconds before sending another trig signal.
+        //sendTrig();
+        //delay_ms(2000); //delay for 2 seconds before sending another trig signal.
+        sendData("AT\r\n");
     }
 }
