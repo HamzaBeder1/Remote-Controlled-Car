@@ -67,11 +67,10 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x1ce           0x2b5  (693)
-.const                       0x3ce                 0x6             0x9  (9)
-.text                        0x3d4               0x18c           0x252  (594)
-.dinit                       0x560                0x16            0x21  (33)
+.text                        0x3ce               0x1ac           0x282  (642)
+.dinit                       0x57a                0x16            0x21  (33)
 
-                 Total "program" memory used (bytes):          0x531  (1329) 2%
+                 Total "program" memory used (bytes):          0x558  (1368) 2%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -127,12 +126,12 @@ External Symbols in Program Memory (by address):
                   0x00037e                  __T1Interrupt
                   0x000398                  __DefaultInterrupt
                   0x00039e                  _strlen
-                  0x0003d4                  _setup
-                  0x000478                  _sendTrig
-                  0x000482                  _delay_ms
-                  0x0004a2                  _initUART
-                  0x000520                  _sendData
-                  0x000556                  _main
+                  0x0003ce                  _setup
+                  0x000482                  _sendTrig
+                  0x00048c                  _delay_ms
+                  0x0004ac                  _initUART
+                  0x00052a                  _sendData
+                  0x000560                  _main
 
 External Symbols in Program Memory (by name):
 
@@ -145,12 +144,12 @@ External Symbols in Program Memory (by name):
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x000482                  _delay_ms
-                  0x0004a2                  _initUART
-                  0x000556                  _main
-                  0x000520                  _sendData
-                  0x000478                  _sendTrig
-                  0x0003d4                  _setup
+                  0x00048c                  _delay_ms
+                  0x0004ac                  _initUART
+                  0x000560                  _main
+                  0x00052a                  _sendData
+                  0x000482                  _sendTrig
+                  0x0003ce                  _setup
                   0x00039e                  _strlen
 
 Memory Configuration
@@ -239,9 +238,9 @@ __CONFIG1
  *(.debug_abbrev)
  .debug_abbrev    0x000000        0x1e6 build/default/production/main.o
 
-.debug_line       0x000000        0x18c
+.debug_line       0x000000        0x19a
  *(.debug_line)
- .debug_line      0x000000        0x18c build/default/production/main.o
+ .debug_line      0x000000        0x19a build/default/production/main.o
 
 .debug_frame      0x000000        0x176
  *(.debug_frame)
@@ -916,17 +915,14 @@ __c30_signature
  .ivt._T1Interrupt
                   0x00001a          0x2 build/default/production/main.o
 
-.const              0x83ce          0x6 load address 0x0003ce  
- .const             0x83ce          0x6 build/default/production/main.o
+.text             0x0003ce        0x1ac
+ .text            0x0003ce        0x1ac build/default/production/main.o
+                  0x0003ce                  _setup
+                  0x000482                  _sendTrig
+                  0x00048c                  _delay_ms
+                  0x0004ac                  _initUART
+                  0x00052a                  _sendData
+                  0x000560                  _main
 
-.text             0x0003d4        0x18c
- .text            0x0003d4        0x18c build/default/production/main.o
-                  0x0003d4                  _setup
-                  0x000478                  _sendTrig
-                  0x000482                  _delay_ms
-                  0x0004a2                  _initUART
-                  0x000520                  _sendData
-                  0x000556                  _main
-
-.dinit            0x000560         0x16
- .dinit           0x000560         0x16 data_init
+.dinit            0x00057a         0x16
+ .dinit           0x00057a         0x16 data_init

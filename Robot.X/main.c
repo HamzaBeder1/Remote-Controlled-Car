@@ -28,8 +28,15 @@ void setup(){
     CLKDIVbits.RCDIV = 0;
     TRISBbits.TRISB4 = 1;  //input for echo
     TRISBbits.TRISB5 = 0; //output for trig 
+    TRISBbits.TRISB7 = 0; //RB7-9 and RB11 used to move the car.
+    TRISBbits.TRISB8 = 0;
+    TRISBbits.TRISB9 = 0;
+    TRISBbits.TRISB11 = 0;
     LATBbits.LATB5 = 0;
-
+    LATBbits.LATB7 = 0;
+    LATBbits.LATB8 = 0;
+    LATBbits.LATB9 = 0;
+    LATBbits.LATB11 = 0;
     //IC1 setup
     IC1CONbits.ICTMR = 0; //timer 3
     IC1CONbits.ICM = 1;
@@ -158,9 +165,16 @@ void sendData(char data []){
 
 int main(void) {
     setup();
+    delay_ms(5000);
     while(1){
         //sendTrig();
         //delay_ms(2000); //delay for 2 seconds before sending another trig signal.
-        sendData("AT\r\n");
+        //sendData("AT\r\n");
+        LATBbits.LATB8 = 1; 
+        LATBbits.LATB11 = 1;
+        delay_ms(1000);
+        LATBbits.LATB8 = 0; 
+        LATBbits.LATB11 = 0;
+        delay_ms(2000);
     }
 }
