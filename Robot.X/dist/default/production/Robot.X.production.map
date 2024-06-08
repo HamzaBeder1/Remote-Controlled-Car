@@ -66,11 +66,12 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200               0x1ce           0x2b5  (693)
-.text                        0x3ce               0x1ac           0x282  (642)
-.dinit                       0x57a                0x16            0x21  (33)
+.text                        0x200               0x1be           0x29d  (669)
+.const                       0x3be                 0xc            0x12  (18)
+.text                        0x3ca               0x1a6           0x279  (633)
+.dinit                       0x570                0x16            0x21  (33)
 
-                 Total "program" memory used (bytes):          0x558  (1368) 2%
+                 Total "program" memory used (bytes):          0x549  (1353) 2%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -122,35 +123,35 @@ External Symbols in Program Memory (by address):
                   0x000252                  __data_init
                   0x0002c8                  __U1RXInterrupt
                   0x0002f2                  __IC1Interrupt
-                  0x000364                  __T3Interrupt
-                  0x00037e                  __T1Interrupt
-                  0x000398                  __DefaultInterrupt
-                  0x00039e                  _strlen
-                  0x0003ce                  _setup
-                  0x000482                  _sendTrig
-                  0x00048c                  _delay_ms
-                  0x0004ac                  _initUART
-                  0x00052a                  _sendData
-                  0x000560                  _main
+                  0x000354                  __T3Interrupt
+                  0x00036e                  __T1Interrupt
+                  0x000388                  __DefaultInterrupt
+                  0x00038e                  _strlen
+                  0x0003ca                  _setup
+                  0x00047e                  _sendTrig
+                  0x000488                  _delay_ms
+                  0x0004a8                  _initUART
+                  0x000526                  _sendData
+                  0x00055c                  _main
 
 External Symbols in Program Memory (by name):
 
-                  0x000398                  __DefaultInterrupt
+                  0x000388                  __DefaultInterrupt
                   0x0002f2                  __IC1Interrupt
-                  0x00037e                  __T1Interrupt
-                  0x000364                  __T3Interrupt
+                  0x00036e                  __T1Interrupt
+                  0x000354                  __T3Interrupt
                   0x0002c8                  __U1RXInterrupt
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x00048c                  _delay_ms
-                  0x0004ac                  _initUART
-                  0x000560                  _main
-                  0x00052a                  _sendData
-                  0x000482                  _sendTrig
-                  0x0003ce                  _setup
-                  0x00039e                  _strlen
+                  0x000488                  _delay_ms
+                  0x0004a8                  _initUART
+                  0x00055c                  _main
+                  0x000526                  _sendData
+                  0x00047e                  _sendTrig
+                  0x0003ca                  _setup
+                  0x00038e                  _strlen
 
 Memory Configuration
 
@@ -187,7 +188,7 @@ LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libfx-elf.a
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000200        0x1ce
+.text             0x000200        0x1be
  *(.init)
  .init            0x000200         0x4c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
                   0x000200                  __resetPRI
@@ -199,23 +200,23 @@ LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libfx-elf.a
  *(.user_init)
  *(.handle)
  *(.isr*)
- .isr.text        0x0002c8         0xd0 build/default/production/main.o
+ .isr.text        0x0002c8         0xc0 build/default/production/main.o
                   0x0002c8                  __U1RXInterrupt
                   0x0002f2                  __IC1Interrupt
-                  0x000364                  __T3Interrupt
-                  0x00037e                  __T1Interrupt
- .isr             0x000398          0x4 default_isr
-                  0x000398                  __DefaultInterrupt
+                  0x000354                  __T3Interrupt
+                  0x00036e                  __T1Interrupt
+ .isr             0x000388          0x4 default_isr
+                  0x000388                  __DefaultInterrupt
  *(.libc)
  *(.libm)
  *(.libdsp)
  *(.lib*)
  .libpic30_crt_start_mode
-                  0x00039c          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt_start_mode_normal.Meo)
-                  0x00039c                  __crt_start_mode
-                  0x00039c                  __crt_start_mode_normal
- .libc.strlen     0x00039e         0x30 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strlen.XX_o)
-                  0x00039e                  _strlen
+                  0x00038c          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt_start_mode_normal.Meo)
+                  0x00038c                  __crt_start_mode
+                  0x00038c                  __crt_start_mode_normal
+ .libc.strlen     0x00038e         0x30 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strlen.XX_o)
+                  0x00038e                  _strlen
 
 usercode
  *(usercode)
@@ -229,22 +230,22 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x1c91
+.debug_info       0x000000       0x1c56
  *(.debug_info)
- .debug_info      0x000000       0x1c91 build/default/production/main.o
+ .debug_info      0x000000       0x1c56 build/default/production/main.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x1e6
+.debug_abbrev     0x000000        0x1c5
  *(.debug_abbrev)
- .debug_abbrev    0x000000        0x1e6 build/default/production/main.o
+ .debug_abbrev    0x000000        0x1c5 build/default/production/main.o
 
-.debug_line       0x000000        0x19a
+.debug_line       0x000000        0x188
  *(.debug_line)
- .debug_line      0x000000        0x19a build/default/production/main.o
+ .debug_line      0x000000        0x188 build/default/production/main.o
 
-.debug_frame      0x000000        0x176
+.debug_frame      0x000000        0x16e
  *(.debug_frame)
- .debug_frame     0x000000        0x176 build/default/production/main.o
+ .debug_frame     0x000000        0x16e build/default/production/main.o
 
 .debug_str        0x000000         0xd4
  *(.debug_str)
@@ -915,14 +916,17 @@ __c30_signature
  .ivt._T1Interrupt
                   0x00001a          0x2 build/default/production/main.o
 
-.text             0x0003ce        0x1ac
- .text            0x0003ce        0x1ac build/default/production/main.o
-                  0x0003ce                  _setup
-                  0x000482                  _sendTrig
-                  0x00048c                  _delay_ms
-                  0x0004ac                  _initUART
-                  0x00052a                  _sendData
-                  0x000560                  _main
+.const              0x83be          0xc load address 0x0003be  
+ .const             0x83be          0xc build/default/production/main.o
 
-.dinit            0x00057a         0x16
- .dinit           0x00057a         0x16 data_init
+.text             0x0003ca        0x1a6
+ .text            0x0003ca        0x1a6 build/default/production/main.o
+                  0x0003ca                  _setup
+                  0x00047e                  _sendTrig
+                  0x000488                  _delay_ms
+                  0x0004a8                  _initUART
+                  0x000526                  _sendData
+                  0x00055c                  _main
+
+.dinit            0x000570         0x16
+ .dinit           0x000570         0x16 data_init

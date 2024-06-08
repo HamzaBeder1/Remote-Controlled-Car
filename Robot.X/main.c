@@ -16,6 +16,7 @@
 
 #include "xc.h"
 #include <stdbool.h>
+#include <string.h>
 
 
 bool stopMotion = 0;
@@ -91,7 +92,7 @@ void __attribute__((interrupt, auto_psv)) _IC1Interrupt(){
         finalTime = (TMR3)*625 + overflowtmr*625*65536;
         overflowtmr = 0;
         TMR3 = 0;
-        uint16_t distance = finalTime/((58)*(10000/10));
+        uint16_t distance = TMR3/58;
         if(distance <= distanceThreshold)
             stopMotion = 1;
         else
@@ -108,7 +109,7 @@ void __attribute__((interrupt, auto_psv)) _T1Interrupt(){
     _T1IF = 0;
     T1CONbits.TON = 0;
     TMR1 = 0;
-    LATBbits.LATB5 = 0;
+    LATBbits.LATB5 = 0; //to end pulse sent to trig pin
 }
 
 
@@ -165,16 +166,10 @@ void sendData(char data []){
 
 int main(void) {
     setup();
-    delay_ms(5000);
+    initUART();
+    delay_ms(2000);
     while(1){
-        //sendTrig();
-        //delay_ms(2000); //delay for 2 seconds before sending another trig signal.
-        //sendData("AT\r\n");
-        LATBbits.LATB8 = 1; 
-        LATBbits.LATB11 = 1;
-        delay_ms(1000);
-        LATBbits.LATB8 = 0; 
-        LATBbits.LATB11 = 0;
         delay_ms(2000);
+        sendData("AT+ROLE=0\r\n");
     }
 }
