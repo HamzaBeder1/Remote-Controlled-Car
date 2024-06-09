@@ -4,11 +4,11 @@ Tool Name:
   c:\program files\microchip\xc16\v2.10\bin\bin\..\bin/elf-ld.exe
 
 Command:
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.00 \
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.01 \
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.02 \
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.03 \
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.04 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00005fd8.00 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00005fd8.01 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00005fd8.02 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00005fd8.03 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00005fd8.04 \
   -p24FJ64GA002 \
   --mdfp=C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC24F-GA-GB_DFP/1.9.336/xc16 \
   -o \
@@ -73,12 +73,11 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200               0x1be           0x29d  (669)
-.const                       0x3be                 0x2             0x3  (3)
-.text                        0x3c0               0x1a6           0x279  (633)
-.dinit                       0x566                0x16            0x21  (33)
+.text                        0x200               0x1ca           0x2af  (687)
+.text                        0x3ca               0x1b4           0x28e  (654)
+.dinit                       0x57e                0x16            0x21  (33)
 
-                 Total "program" memory used (bytes):          0x53a  (1338) 2%
+                 Total "program" memory used (bytes):          0x55e  (1374) 2%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -92,9 +91,9 @@ reserve_data_0x824           0x824                 0x2             0x2  (2)
 reserve_data_0x826           0x826                0x2a            0x2a  (42)
 .nbss                        0x850                   0             0xa  (10)
 .ndata                       0x85a                   0             0x2  (2)
-.bss                         0x85c                   0            0x28  (40)
+.bss                         0x85c                   0            0x14  (20)
 
-                 Total "data" memory used (bytes):           0x84  (132) 1%
+                 Total "data" memory used (bytes):           0x70  (112) 1%
 
 
 Dynamic Memory Usage
@@ -102,9 +101,9 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0x884                              0x1f7c  (8060)
+stack                        0x870                              0x1f90  (8080)
 
-                 Maximum dynamic memory (bytes):         0x1f7c  (8060)
+                 Maximum dynamic memory (bytes):         0x1f90  (8080)
 
 Info: Project is using a large data memory model when small data memory model is sufficient.
 
@@ -134,36 +133,38 @@ External Symbols in Program Memory (by address):
                   0x000252                  __data_init_standard
                   0x000252                  __data_init
                   0x0002c8                  __U1RXInterrupt
-                  0x0002f2                  __IC1Interrupt
-                  0x000354                  __T3Interrupt
-                  0x00036e                  __T1Interrupt
-                  0x000388                  __DefaultInterrupt
-                  0x00038e                  _strlen
-                  0x0003c0                  _setup
-                  0x000474                  _sendTrig
-                  0x00047e                  _delay_ms
-                  0x00049e                  _initUART
-                  0x00051c                  _sendData
-                  0x000552                  _main
+                  0x0002fe                  __IC1Interrupt
+                  0x000360                  __T3Interrupt
+                  0x00037a                  __T1Interrupt
+                  0x000394                  __DefaultInterrupt
+                  0x00039a                  _strlen
+                  0x0003ca                  _setup
+                  0x00047e                  _addTo
+                  0x000494                  _sendTrig
+                  0x00049e                  _delay_ms
+                  0x0004be                  _initUART
+                  0x00053c                  _sendData
+                  0x000572                  _main
 
 External Symbols in Program Memory (by name):
 
-                  0x000388                  __DefaultInterrupt
-                  0x0002f2                  __IC1Interrupt
-                  0x00036e                  __T1Interrupt
-                  0x000354                  __T3Interrupt
+                  0x000394                  __DefaultInterrupt
+                  0x0002fe                  __IC1Interrupt
+                  0x00037a                  __T1Interrupt
+                  0x000360                  __T3Interrupt
                   0x0002c8                  __U1RXInterrupt
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x00047e                  _delay_ms
-                  0x00049e                  _initUART
-                  0x000552                  _main
-                  0x00051c                  _sendData
-                  0x000474                  _sendTrig
-                  0x0003c0                  _setup
-                  0x00038e                  _strlen
+                  0x00047e                  _addTo
+                  0x00049e                  _delay_ms
+                  0x0004be                  _initUART
+                  0x000572                  _main
+                  0x00053c                  _sendData
+                  0x000494                  _sendTrig
+                  0x0003ca                  _setup
+                  0x00039a                  _strlen
 
 Memory Configuration
 
@@ -227,7 +228,7 @@ LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libfx-elf.a
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000200        0x1be
+.text             0x000200        0x1ca
  *(.init)
  .init            0x000200         0x4c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
                   0x000200                  __resetPRI
@@ -239,23 +240,23 @@ LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libfx-elf.a
  *(.user_init)
  *(.handle)
  *(.isr*)
- .isr.text        0x0002c8         0xc0 build/default/debug/main.o
+ .isr.text        0x0002c8         0xcc build/default/debug/main.o
                   0x0002c8                  __U1RXInterrupt
-                  0x0002f2                  __IC1Interrupt
-                  0x000354                  __T3Interrupt
-                  0x00036e                  __T1Interrupt
- .isr             0x000388          0x4 default_isr
-                  0x000388                  __DefaultInterrupt
+                  0x0002fe                  __IC1Interrupt
+                  0x000360                  __T3Interrupt
+                  0x00037a                  __T1Interrupt
+ .isr             0x000394          0x4 default_isr
+                  0x000394                  __DefaultInterrupt
  *(.libc)
  *(.libm)
  *(.libdsp)
  *(.lib*)
  .libpic30_crt_start_mode
-                  0x00038c          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt_start_mode_normal.Meo)
-                  0x00038c                  __crt_start_mode
-                  0x00038c                  __crt_start_mode_normal
- .libc.strlen     0x00038e         0x30 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strlen.XX_o)
-                  0x00038e                  _strlen
+                  0x000398          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt_start_mode_normal.Meo)
+                  0x000398                  __crt_start_mode
+                  0x000398                  __crt_start_mode_normal
+ .libc.strlen     0x00039a         0x30 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strlen.XX_o)
+                  0x00039a                  _strlen
 
 usercode
  *(usercode)
@@ -269,22 +270,22 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x1c56
+.debug_info       0x000000       0x1c7e
  *(.debug_info)
- .debug_info      0x000000       0x1c56 build/default/debug/main.o
+ .debug_info      0x000000       0x1c7e build/default/debug/main.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0x1c5
  *(.debug_abbrev)
  .debug_abbrev    0x000000        0x1c5 build/default/debug/main.o
 
-.debug_line       0x000000        0x188
+.debug_line       0x000000        0x193
  *(.debug_line)
- .debug_line      0x000000        0x188 build/default/debug/main.o
+ .debug_line      0x000000        0x193 build/default/debug/main.o
 
-.debug_frame      0x000000        0x16e
+.debug_frame      0x000000        0x17e
  *(.debug_frame)
- .debug_frame     0x000000        0x16e build/default/debug/main.o
+ .debug_frame     0x000000        0x17e build/default/debug/main.o
 
 .debug_str        0x000000         0xd4
  *(.debug_str)
@@ -297,10 +298,10 @@ __CONFIG1
  *(.debug_macinfo)
 
 .debug_pubnames
-                  0x000000         0xf8
+                  0x000000        0x102
  *(.debug_pubnames)
  .debug_pubnames
-                  0x000000         0xf8 build/default/debug/main.o
+                  0x000000        0x102 build/default/debug/main.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -924,8 +925,8 @@ __c30_signature
  .ndata             0x085a          0x2 build/default/debug/main.o
                     0x085a                  _distanceThreshold
 
-.bss                0x085c         0x28
- .bss               0x085c         0x28 build/default/debug/main.o
+.bss                0x085c         0x14
+ .bss               0x085c         0x14 build/default/debug/main.o
                     0x085c                  _buffer
 
 .config_JTAGEN    0x00abfe          0x2
@@ -955,17 +956,15 @@ __c30_signature
  .ivt._T1Interrupt
                   0x00001a          0x2 build/default/debug/main.o
 
-.const              0x83be          0x2 load address 0x0003be  
- .const             0x83be          0x2 build/default/debug/main.o
+.text             0x0003ca        0x1b4
+ .text            0x0003ca        0x1b4 build/default/debug/main.o
+                  0x0003ca                  _setup
+                  0x00047e                  _addTo
+                  0x000494                  _sendTrig
+                  0x00049e                  _delay_ms
+                  0x0004be                  _initUART
+                  0x00053c                  _sendData
+                  0x000572                  _main
 
-.text             0x0003c0        0x1a6
- .text            0x0003c0        0x1a6 build/default/debug/main.o
-                  0x0003c0                  _setup
-                  0x000474                  _sendTrig
-                  0x00047e                  _delay_ms
-                  0x00049e                  _initUART
-                  0x00051c                  _sendData
-                  0x000552                  _main
-
-.dinit            0x000566         0x16
- .dinit           0x000566         0x16 data_init
+.dinit            0x00057e         0x16
+ .dinit           0x00057e         0x16 data_init

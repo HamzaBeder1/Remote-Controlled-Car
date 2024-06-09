@@ -23,7 +23,7 @@ bool stopMotion = 0;
 volatile uint32_t finalTime = 0;
 volatile int overflowtmr = 0;
 int distanceThreshold = 1;
-volatile int buffer[20];
+volatile char buffer[20];
 volatile int front;
 void setup(){
     CLKDIVbits.RCDIV = 0;
@@ -78,9 +78,27 @@ void setup(){
 void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
 {
     IFS0bits.U1RXIF = 0;
-    buffer[front++] = U1RXREG;
+    /*addTo(U1RXREG);
+    char c = buffer[0];*/
+    if(U1RXREG == 'W'){
+        LATBbits.LATB7 = 1;
+        LATBbits.LATB9 = 1;
+    }
+    else if(U1RXREG == 'S'){
+        LATBbits.LATB8 = 1;
+        LATBbits.LATB11 = 1;
+    }
+    delay_ms(1000);
+    LATBbits.LATB7 = 0;
+    LATBbits.LATB8 = 0;
+    LATBbits.LATB9 = 0;
+    LATBbits.LATB11 = 0;
+    
 }
 
+void addTo(int val){
+    buffer[front++] = val;
+}
 void __attribute__((interrupt, auto_psv)) _IC1Interrupt(){
     IFS0bits.IC1IF = 0;
     if(PORTBbits.RB4 == 1){
@@ -169,7 +187,6 @@ int main(void) {
     initUART();
     delay_ms(2000);
     while(1){
-        delay_ms(2000);
-        sendData("AT+UART?\r\n");
+        
     }
 }
