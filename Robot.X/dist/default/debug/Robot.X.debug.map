@@ -4,11 +4,11 @@ Tool Name:
   c:\program files\microchip\xc16\v2.10\bin\bin\..\bin/elf-ld.exe
 
 Command:
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00002618.00 \
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00002618.01 \
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00002618.02 \
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00002618.03 \
-  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp00002618.04 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.00 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.01 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.02 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.03 \
+  -TC:\\Users\\HAMZAB~1\\AppData\\Local\\Temp\\tmp000067d0.04 \
   -p24FJ64GA002 \
   --mdfp=C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC24F-GA-GB_DFP/1.9.336/xc16 \
   -o \
@@ -74,10 +74,11 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x1be           0x29d  (669)
-.text                        0x3be               0x1a2           0x273  (627)
-.dinit                       0x560                0x16            0x21  (33)
+.const                       0x3be                 0x2             0x3  (3)
+.text                        0x3c0               0x1a6           0x279  (633)
+.dinit                       0x566                0x16            0x21  (33)
 
-                 Total "program" memory used (bytes):          0x531  (1329) 2%
+                 Total "program" memory used (bytes):          0x53a  (1338) 2%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -138,12 +139,12 @@ External Symbols in Program Memory (by address):
                   0x00036e                  __T1Interrupt
                   0x000388                  __DefaultInterrupt
                   0x00038e                  _strlen
-                  0x0003be                  _setup
-                  0x000472                  _sendTrig
-                  0x00047c                  _delay_ms
-                  0x00049c                  _initUART
-                  0x00051a                  _sendData
-                  0x000550                  _main
+                  0x0003c0                  _setup
+                  0x000474                  _sendTrig
+                  0x00047e                  _delay_ms
+                  0x00049e                  _initUART
+                  0x00051c                  _sendData
+                  0x000552                  _main
 
 External Symbols in Program Memory (by name):
 
@@ -156,12 +157,12 @@ External Symbols in Program Memory (by name):
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x00047c                  _delay_ms
-                  0x00049c                  _initUART
-                  0x000550                  _main
-                  0x00051a                  _sendData
-                  0x000472                  _sendTrig
-                  0x0003be                  _setup
+                  0x00047e                  _delay_ms
+                  0x00049e                  _initUART
+                  0x000552                  _main
+                  0x00051c                  _sendData
+                  0x000474                  _sendTrig
+                  0x0003c0                  _setup
                   0x00038e                  _strlen
 
 Memory Configuration
@@ -277,9 +278,9 @@ __CONFIG1
  *(.debug_abbrev)
  .debug_abbrev    0x000000        0x1c5 build/default/debug/main.o
 
-.debug_line       0x000000        0x187
+.debug_line       0x000000        0x188
  *(.debug_line)
- .debug_line      0x000000        0x187 build/default/debug/main.o
+ .debug_line      0x000000        0x188 build/default/debug/main.o
 
 .debug_frame      0x000000        0x16e
  *(.debug_frame)
@@ -954,14 +955,17 @@ __c30_signature
  .ivt._T1Interrupt
                   0x00001a          0x2 build/default/debug/main.o
 
-.text             0x0003be        0x1a2
- .text            0x0003be        0x1a2 build/default/debug/main.o
-                  0x0003be                  _setup
-                  0x000472                  _sendTrig
-                  0x00047c                  _delay_ms
-                  0x00049c                  _initUART
-                  0x00051a                  _sendData
-                  0x000550                  _main
+.const              0x83be          0x2 load address 0x0003be  
+ .const             0x83be          0x2 build/default/debug/main.o
 
-.dinit            0x000560         0x16
- .dinit           0x000560         0x16 data_init
+.text             0x0003c0        0x1a6
+ .text            0x0003c0        0x1a6 build/default/debug/main.o
+                  0x0003c0                  _setup
+                  0x000474                  _sendTrig
+                  0x00047e                  _delay_ms
+                  0x00049e                  _initUART
+                  0x00051c                  _sendData
+                  0x000552                  _main
+
+.dinit            0x000566         0x16
+ .dinit           0x000566         0x16 data_init

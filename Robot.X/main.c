@@ -170,6 +170,6 @@ int main(void) {
     delay_ms(2000);
     while(1){
         delay_ms(2000);
-        sendData("AT+ROLE=0\r\n");
+        sendData("AT+UART?\r\n");
     }
 }
