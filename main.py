@@ -10,10 +10,11 @@ def readData():
 
 def main():
     while(1):
+        print('Enter direction:')
         direction = input()
         direction = direction.encode("ascii")
         serialPort.write(direction)
-        t.sleep(2)
+        t.sleep(1)
 
 if __name__ == "__main__":
     main()

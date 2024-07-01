@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <executable name="dist/default/production/Robot.X.production.elf">
+  <executable name="dist/default/production/RCCar.X.production.elf">
     <memory name="data">
       <units>bytes</units>
       <length>8192</length>
@@ -11,8 +11,8 @@
     <memory name="program">
       <units>bytes</units>
       <length>65274</length>
-      <used>1413</used>
-      <free>63861</free>
+      <used>1422</used>
+      <free>63852</free>
     </memory>
   </executable>
 </project>

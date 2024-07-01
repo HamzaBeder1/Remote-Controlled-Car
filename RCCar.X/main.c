@@ -27,18 +27,24 @@ volatile char buffer[20];
 volatile int front;
 void setup(){
     CLKDIVbits.RCDIV = 0;
-    TRISBbits.TRISB4 = 1;  //input for echo
-    TRISBbits.TRISB5 = 0; //output for trig 
-    TRISBbits.TRISB7 = 0; //RB7-9 and RB11 used to move the car.
-    TRISBbits.TRISB8 = 0;
-    TRISBbits.TRISB9 = 0;
-    TRISBbits.TRISB11 = 0;
-    LATBbits.LATB5 = 0;
-    LATBbits.LATB7 = 0;
-    LATBbits.LATB8 = 0;
-    LATBbits.LATB9 = 0;
-    LATBbits.LATB11 = 0;
-    //IC1 setup
+    TRISB |= 0b0000000000010000;
+    TRISB &= 0b1111010001011111;
+    LATB &= 0b1111010001011111;
+    
+    //TIMER1 setup
+    T1CON = 0;
+    TMR1 = 0;
+    T1CONbits.TCKPS = 0;
+    _T1IF = 0;
+    PR1 = 160; //for a delay of 10uS
+    T1CONbits.TON = 0;
+    IFS0bits.T1IF = 0;
+    IEC0bits.T1IE = 1;
+    IPC0bits.T1IP = 5; //higher priority than the input capture interrupt
+
+}
+
+void ICsetup(){
     IC1CONbits.ICTMR = 0; //timer 3
     IC1CONbits.ICM = 1;
 
@@ -59,20 +65,7 @@ void setup(){
     IPC2bits.T3IP = 3;
     IFS0bits.IC1IF = 0;
     IEC0bits.IC1IE = 1;
-    IPC0bits.IC1IP = 3;
-
-    //TIMER1 setup
-    T1CON = 0;
-    TMR1 = 0;
-    T1CONbits.TCKPS = 0;
-    _T1IF = 0;
-    PR1 = 160; //for a delay of 10uS
-    T1CONbits.TON = 0;
-
-    IFS0bits.T1IF = 0;
-    IEC0bits.T1IE = 1;
-    IPC0bits.T1IP = 5; //higher priority than the input capture interrupt
-
+    IPC0bits.IC1IP = 3; 
 }
 
 void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
@@ -187,6 +180,7 @@ int main(void) {
     initUART();
     delay_ms(2000);
     while(1){
-        
+        sendTrig();
+        delay_ms(1000);
     }
 }
