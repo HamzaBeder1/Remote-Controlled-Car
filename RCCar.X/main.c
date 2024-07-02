@@ -1,18 +1,18 @@
-// CW1: FLASH CONFIGURATION WORD 1 (see PIC24 Family Reference Manual 24.1)
-#pragma config ICS = PGx1          // Comm Channel Select (Emulator EMUC1/EMUD1 pins are shared with PGC1/PGD1)
-#pragma config FWDTEN = OFF        // Watchdog Timer Enable (Watchdog Timer is disabled)
-#pragma config GWRP = OFF          // General Code Segment Write Protect (Writes to program memory are allowed)
-#pragma config GCP = OFF           // General Code Segment Code Protect (Code protection is disabled)
-#pragma config JTAGEN = OFF        // JTAG Port Enable (JTAG port is disabled)
+
+#pragma config ICS = PGx1          
+#pragma config FWDTEN = OFF        
+#pragma config GWRP = OFF          
+#pragma config GCP = OFF           
+#pragma config JTAGEN = OFF        
 
 
-// CW2: FLASH CONFIGURATION WORD 2 (see PIC24 Family Reference Manual 24.1)
-#pragma config I2C1SEL = PRI       // I2C1 Pin Location Select (Use default SCL1/SDA1 pins)
-#pragma config IOL1WAY = OFF       // IOLOCK Protection (IOLOCK may be changed via unlocking seq)
-#pragma config OSCIOFNC = ON       // Primary Oscillator I/O Function (CLKO/RC15 functions as I/O pin)
-#pragma config FCKSM = CSECME      // Clock Switching and Monitor (Clock switching is enabled, 
-                                       // Fail-Safe Clock Monitor is enabled)
-#pragma config FNOSC = FRCPLL      // Oscillator Select (Fast RC Oscillator with PLL module (FRCPLL))
+
+#pragma config I2C1SEL = PRI       
+#pragma config IOL1WAY = OFF      
+#pragma config OSCIOFNC = ON       
+#pragma config FCKSM = CSECME     
+                                      
+#pragma config FNOSC = FRCPLL      
 
 #include "xc.h"
 #include <stdbool.h>
@@ -22,9 +22,11 @@
 bool stopMotion = 0;
 volatile uint32_t finalTime = 0;
 volatile int overflowtmr = 0;
-int distanceThreshold = 1;
+const float distanceThreshold = 2;
 volatile char buffer[20];
 volatile int front;
+int trigDone = 0;
+int toggleMove;
 void setup(){
     CLKDIVbits.RCDIV = 0;
     TRISB |= 0b0000000000010000;
@@ -41,7 +43,18 @@ void setup(){
     IFS0bits.T1IF = 0;
     IEC0bits.T1IE = 1;
     IPC0bits.T1IP = 5; //higher priority than the input capture interrupt
+    
+    //TIMER3 setup
+    T3CON = 0;
+    TMR3 = 0;
+    T3CONbits.TCKPS = 0;//a prescaler of 1 for TMR3
+    _T3IF = 0; 
+    PR3 = 65535;
+    T3CONbits.TON = 0;
 
+    /*IFS0bits.T3IF = 0;
+    IEC0bits.T3IE = 1;
+    IPC2bits.T3IP = 3;*/
 }
 
 void ICsetup(){
@@ -121,6 +134,7 @@ void __attribute__((interrupt, auto_psv)) _T1Interrupt(){
     T1CONbits.TON = 0;
     TMR1 = 0;
     LATBbits.LATB5 = 0; //to end pulse sent to trig pin
+    trigDone = 1;
 }
 
 
@@ -181,6 +195,21 @@ int main(void) {
     delay_ms(2000);
     while(1){
         sendTrig();
+        while(!trigDone);
+        while(!PORTBbits.RB4);
+        T3CONbits.TON = 1;
+        trigDone = 0;
+        while(PORTBbits.RB4);
+        T3CONbits.TON = 0;
+        float a = TMR3;
+        a = a/(58*16);
+        TMR3 = 0;
+        if(a <= distanceThreshold){
+            toggleMove = 0;
+        }
+        else{
+            toggleMove = 1;
+        }
         delay_ms(1000);
     }
 }
