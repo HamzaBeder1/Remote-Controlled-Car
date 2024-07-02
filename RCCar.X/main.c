@@ -24,7 +24,7 @@ volatile uint32_t finalTime = 0;
 volatile int overflowtmr = 0;
 const float distanceThreshold = 2;
 volatile char buffer[20];
-volatile int front;
+volatile int front = 0, back = 0;
 int trigDone = 0;
 int toggleMove;
 void setup(){
@@ -84,22 +84,8 @@ void ICsetup(){
 void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
 {
     IFS0bits.U1RXIF = 0;
-    /*addTo(U1RXREG);
-    char c = buffer[0];*/
-    if(U1RXREG == 'W'){
-        LATBbits.LATB7 = 1;
-        LATBbits.LATB9 = 1;
-    }
-    else if(U1RXREG == 'S'){
-        LATBbits.LATB8 = 1;
-        LATBbits.LATB11 = 1;
-    }
-    delay_ms(1000);
-    LATBbits.LATB7 = 0;
-    LATBbits.LATB8 = 0;
-    LATBbits.LATB9 = 0;
-    LATBbits.LATB11 = 0;
-    
+    buffer[front] = U1RXREG;
+    front = (front+1)%20;
 }
 
 void addTo(int val){
@@ -183,10 +169,30 @@ void initUART(){
 
 void sendData(char data []){
     int i;
-    for(i = 0; i<strlen(data); i++){
+    int len = sizeof(data)/sizeof(data[0]);
+    for(i = 0; i<len; i++){
         U1TXREG = data[i];
         while(U1STAbits.UTXBF == 1);
     }
+}
+
+void sendData2(float data[]){
+    int i;
+    int len = sizeof(data)/sizeof(data[0]);
+    for(int i = 0; i < 1; i++){
+        U1TXREG = data[i];
+        while(U1STAbits.UTXBF == 1);
+    }   
+}
+
+char getData(){
+    if(front == back) //no new data
+        return 'N';
+    else if(toggleMove == 0) //collision about to occur, stop movement.
+        return 'N';
+    char data = buffer[back];
+    back = (back+1)%20;
+    return data;
 }
 
 int main(void) {
@@ -203,13 +209,35 @@ int main(void) {
         T3CONbits.TON = 0;
         float a = TMR3;
         a = a/(58*16);
+        float arr[1] = {a};
         TMR3 = 0;
+        sendData2(arr);
         if(a <= distanceThreshold){
             toggleMove = 0;
         }
         else{
             toggleMove = 1;
         }
-        delay_ms(1000);
+        char data = getData();
+        switch (data)
+        {
+            case 'W':{
+                LATBbits.LATB7 = 1;
+                LATBbits.LATB9 = 1;
+                break;
+            }
+            
+            case 'S':{
+                LATBbits.LATB8 = 1;
+                LATBbits.LATB11 = 1;
+                break;
+            }
+            
+            default:{
+            break;
+            }
+        }
+        delay_ms(100);
+        LATB &= 0b1111010001111111; 
     }
 }
