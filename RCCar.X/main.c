@@ -29,10 +29,11 @@ int trigDone = 0;
 int toggleMove;
 void setup(){
     CLKDIVbits.RCDIV = 0;
-    TRISB |= 0b0000000000010000;
-    TRISB &= 0b1111010001011111;
-    LATB &= 0b1111010001011111;
-    
+    TRISB |= 0b0001000000000100;
+    TRISB &= 0b1111010001000111;
+    TRISA &= 0b1111111111100101;
+    LATB &= 0b1111010001011111; //CS = 0
+    LATA |= 0b0000000000000010;
     //TIMER1 setup
     T1CON = 0;
     TMR1 = 0;
@@ -57,13 +58,13 @@ void setup(){
     IPC2bits.T3IP = 3;*/
 }
 
-void ICsetup(){
+void initIC(){
     IC1CONbits.ICTMR = 0; //timer 3
     IC1CONbits.ICM = 1;
 
     //PPS for IC1
     __builtin_write_OSCCONL(OSCCON & 0xbf);// unlock PPS
-    RPINR7bits.IC1R = 4;  // RP4 (pin 11)
+    RPINR7bits.IC1R = 12;  // RP12 (pin 23)
     __builtin_write_OSCCONL(OSCCON | 0x40); // lock   PPS
 
     T3CON = 0;
@@ -81,6 +82,26 @@ void ICsetup(){
     IPC0bits.IC1IP = 3; 
 }
 
+void initSPI(){
+    SPI1STATbits.SPIEN = 0;
+    SPI1STATbits.SPIROV = 0; //no overflow has occurred. 
+    SPI1CON1bits.MSTEN = 1; //master mode.
+    SPI1STATbits.SPIEN = 1;
+    
+    IFS0bits.SPI1IF = 0;
+    IEC0bits.SPI1IE = 1;
+    IPC2bits.SPI1IP = 4; //interrupt priority 3.
+    
+    //PPS
+    __builtin_write_OSCCONL(OSCCON & 0xbf);// unlock PPS
+    RPINR20bits.SDI1R = 2; //pin 6 for SDI1.
+    RPOR1bits.RP3R = 7; //pin 7 for SDO1.
+    RPOR2bits.RP4R = 8; //pin 11 for SCK1.
+    RPOR2bits.RP5R = 9; //pin 14 for SS1.
+    __builtin_write_OSCCONL(OSCCON | 0x40); // lock   PPS
+}
+
+
 void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
 {
     IFS0bits.U1RXIF = 0;
@@ -93,7 +114,7 @@ void addTo(int val){
 }
 void __attribute__((interrupt, auto_psv)) _IC1Interrupt(){
     IFS0bits.IC1IF = 0;
-    if(PORTBbits.RB4 == 1){
+    if(PORTBbits.RB12 == 1){
         //reset both TMR3 and overflowtmr
         TMR3 = 0;
         overflowtmr = 0;
@@ -119,13 +140,13 @@ void __attribute__((interrupt, auto_psv)) _T1Interrupt(){
     _T1IF = 0;
     T1CONbits.TON = 0;
     TMR1 = 0;
-    LATBbits.LATB5 = 0; //to end pulse sent to trig pin
+    LATAbits.LATA4 = 0; //to end pulse sent to trig pin
     trigDone = 1;
 }
 
 
 void sendTrig(){
-    LATBbits.LATB5 = 1;
+    LATAbits.LATA4 = 1;
     T1CONbits.TON = 1;
 }
 
@@ -198,20 +219,22 @@ char getData(){
 int main(void) {
     setup();
     initUART();
+    initSPI();
     delay_ms(2000);
     while(1){
+        SPI1BUF = 0b00000000;
+    }
+    /*while(1){
         sendTrig();
         while(!trigDone);
-        while(!PORTBbits.RB4);
+        while(!PORTBbits.RB12);
         T3CONbits.TON = 1;
         trigDone = 0;
-        while(PORTBbits.RB4);
+        while(PORTBbits.RB12);
         T3CONbits.TON = 0;
         float a = TMR3;
         a = a/(58*16);
-        float arr[1] = {a};
         TMR3 = 0;
-        sendData2(arr);
         if(a <= distanceThreshold){
             toggleMove = 0;
         }
@@ -237,7 +260,7 @@ int main(void) {
             break;
             }
         }
-        delay_ms(100);
+        delay_ms(1000);
         LATB &= 0b1111010001111111; 
-    }
+    }*/
 }

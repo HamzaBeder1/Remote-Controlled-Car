@@ -14,7 +14,6 @@ def main():
         direction = input()
         direction = direction.encode("ascii")
         serialPort.write(direction)
-        t.sleep(1)
 
 if __name__ == "__main__":
     main()
