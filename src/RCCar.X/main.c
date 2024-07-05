@@ -1,19 +1,18 @@
-
 #pragma config ICS = PGx1          
 #pragma config FWDTEN = OFF        
 #pragma config GWRP = OFF          
 #pragma config GCP = OFF           
 #pragma config JTAGEN = OFF        
 
-
-
 #pragma config I2C1SEL = PRI       
 #pragma config IOL1WAY = OFF      
 #pragma config OSCIOFNC = ON       
 #pragma config FCKSM = CSECME     
                                       
-#pragma config FNOSC = FRCPLL      
+#pragma config FNOSC = FRCPLL  
 
+#define FCY 16000000UL
+#include <libpic30.h>
 #include "xc.h"
 #include <stdbool.h>
 #include <string.h>
@@ -29,11 +28,17 @@ int trigDone = 0;
 int toggleMove;
 void setup(){
     CLKDIVbits.RCDIV = 0;
+    AD1PCFG |= 0b0001111111111111;
     TRISB |= 0b0001000000000100;
     TRISB &= 0b1111010001000111;
     TRISA &= 0b1111111111100101;
-    LATB &= 0b1111010001011111; //CS = 0
-    LATA |= 0b0000000000000010;
+    LATB &= 0b1111010001111111; 
+    LATBbits.LATB5 = 1; //CS = 1, initially.
+    LATA |= 0b0000000000001010;
+    
+    //enable global interrupts
+    __builtin_enable_interrupts();
+    
     //TIMER1 setup
     T1CON = 0;
     TMR1 = 0;
@@ -86,7 +91,9 @@ void initSPI(){
     SPI1STATbits.SPIEN = 0;
     SPI1STATbits.SPIROV = 0; //no overflow has occurred. 
     SPI1CON1bits.MSTEN = 1; //master mode.
+    SPI1STATbits.SISEL = 0b101; //interrupts when last bit shifts out of SPIxSR, so transmit is complete.
     SPI1STATbits.SPIEN = 1;
+    SPI1CON2bits.SPIBEN = 0; //enhanced buffer is disabled.
     
     IFS0bits.SPI1IF = 0;
     IEC0bits.SPI1IE = 1;
@@ -99,62 +106,6 @@ void initSPI(){
     RPOR2bits.RP4R = 8; //pin 11 for SCK1.
     RPOR2bits.RP5R = 9; //pin 14 for SS1.
     __builtin_write_OSCCONL(OSCCON | 0x40); // lock   PPS
-}
-
-
-void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
-{
-    IFS0bits.U1RXIF = 0;
-    buffer[front] = U1RXREG;
-    front = (front+1)%20;
-}
-
-void addTo(int val){
-    buffer[front++] = val;
-}
-void __attribute__((interrupt, auto_psv)) _IC1Interrupt(){
-    IFS0bits.IC1IF = 0;
-    if(PORTBbits.RB12 == 1){
-        //reset both TMR3 and overflowtmr
-        TMR3 = 0;
-        overflowtmr = 0;
-    }
-    else{
-        finalTime = (TMR3)*625 + overflowtmr*625*65536;
-        overflowtmr = 0;
-        TMR3 = 0;
-        uint16_t distance = TMR3/58;
-        if(distance <= distanceThreshold)
-            stopMotion = 1;
-        else
-            stopMotion = 0;
-    }
-}
-
-void __attribute__((interrupt, auto_psv)) _T3Interrupt(){
-    IFS0bits.T3IF = 0;
-    overflowtmr++;
-}
-
-void __attribute__((interrupt, auto_psv)) _T1Interrupt(){
-    _T1IF = 0;
-    T1CONbits.TON = 0;
-    TMR1 = 0;
-    LATAbits.LATA4 = 0; //to end pulse sent to trig pin
-    trigDone = 1;
-}
-
-
-void sendTrig(){
-    LATAbits.LATA4 = 1;
-    T1CONbits.TON = 1;
-}
-
-void delay_ms(unsigned int ms){
-    while(ms-- > 0){
-        asm("repeat #15999");
-        asm("nop");
-    }
 }
 
 void initUART(){
@@ -187,6 +138,60 @@ void initUART(){
     IPC2bits.U1RXIP = 5; //priority of 5
 }
 
+void __attribute__((__interrupt__, __auto_psv__)) _SPI1Interrupt(void){
+    IFS0bits.SPI1IF = 0;
+}
+
+void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
+{
+    IFS0bits.U1RXIF = 0;
+    buffer[front] = U1RXREG;
+    front = (front+1)%20;
+}
+
+void __attribute__((interrupt, auto_psv)) _IC1Interrupt(){
+    IFS0bits.IC1IF = 0;
+    if(PORTBbits.RB12 == 1){
+        //reset both TMR3 and overflowtmr
+        TMR3 = 0;
+        overflowtmr = 0;
+    }
+    else{
+        finalTime = (TMR3)*625 + overflowtmr*625*65536;
+        overflowtmr = 0;
+        TMR3 = 0;
+        uint16_t distance = TMR3/58;
+        if(distance <= distanceThreshold)
+            stopMotion = 1;
+        else
+            stopMotion = 0;
+    }
+}
+
+void __attribute__((interrupt, auto_psv)) _T3Interrupt(){
+    IFS0bits.T3IF = 0;
+    overflowtmr++;
+}
+
+void __attribute__((interrupt, auto_psv)) _T1Interrupt(){
+    _T1IF = 0;
+    T1CONbits.TON = 0;
+    TMR1 = 0;
+    LATAbits.LATA4 = 0; //to end pulse sent to trig pin
+    trigDone = 1;
+}
+
+void delay_ms(unsigned int ms){
+    while(ms-- > 0){
+        asm("repeat #15999");
+        asm("nop");
+    }
+}
+
+void sendTrig(){
+    LATAbits.LATA4 = 1;
+    T1CONbits.TON = 1;
+}
 
 void sendData(char data []){
     int i;
@@ -216,15 +221,41 @@ char getData(){
     return data;
 }
 
+unsigned char spixchg(unsigned char data){
+    SPI1STATbits.SPIEN = 1;
+    LATBbits.LATB5 = 0; //Set CS LOW.
+    SPI1BUF = data;
+    while(!SPI1STATbits.SPIRBF);
+    LATBbits.LATB5 = 1; //Set CS HIGH.
+    SPI1STATbits.SPIEN = 0;
+    return SPI1BUF; //dummy read to clear SPI1BUF. Also return received data.
+}
+
+void displayData(){
+    LATAbits.LATA1 = 0; //A0 = 0 for command mode.
+    spixchg(0b00101001); //DISPON command.
+    delay_ms(120); 
+    spixchg(0b00101100); //RAMWR command.
+    LATAbits.LATA1 = 1; //A0 = 1 for data mode, now writing to memory.
+    
+    int i;
+    for(i = 0; i <20; i++) //12 bits per pixel -> 2 pixels should become black.
+    {
+        spixchg(0b00000000); 
+    }
+    LATAbits.LATA1 = 0; //A0 = 0 for command mode.6
+    spixchg(0b00101001); //ending with any command (method 2, section 9.6.2).
+}
+
 int main(void) {
     setup();
-    initUART();
     initSPI();
-    delay_ms(2000);
-    while(1){
-        SPI1BUF = 0b00000000;
-    }
+    initUART();
+    __delay_ms(2000);
     /*while(1){
+        displayData();
+    }*/
+    while(1){
         sendTrig();
         while(!trigDone);
         while(!PORTBbits.RB12);
@@ -262,5 +293,5 @@ int main(void) {
         }
         delay_ms(1000);
         LATB &= 0b1111010001111111; 
-    }*/
+    }
 }
