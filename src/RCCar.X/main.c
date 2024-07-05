@@ -30,7 +30,7 @@ void setup(){
     CLKDIVbits.RCDIV = 0;
     AD1PCFG |= 0b0001111111111111;
     TRISB |= 0b0001000000000100;
-    TRISB &= 0b1111010001000111;
+    TRISB &= 0b1000011111000111;
     TRISA &= 0b1111111111100101;
     LATB &= 0b1111010001111111; 
     LATBbits.LATB5 = 1; //CS = 1, initially.
@@ -87,6 +87,15 @@ void initIC(){
     IPC0bits.IC1IP = 3; 
 }
 
+void initI2C(){
+    I2C1CONbits.I2CEN = 0; 
+    //I2C1STATbits.R_W = 1; //data is being read from MPU-6050.
+    I2C1BRG = 157;
+    IFS1bits.MI2C1IF = 0;
+   
+    I2C1CONbits.I2CEN = 1; //enables I2C
+}
+
 void initSPI(){
     SPI1STATbits.SPIEN = 0;
     SPI1STATbits.SPIROV = 0; //no overflow has occurred. 
@@ -137,6 +146,12 @@ void initUART(){
 
     IPC2bits.U1RXIP = 5; //priority of 5
 }
+
+void __attribute__((interrupt, no_auto_psv)) _MI2C1IFInterrupt(void){
+    IFS1bits.MI2C1IF = 0;
+}
+
+
 
 void __attribute__((__interrupt__, __auto_psv__)) _SPI1Interrupt(void){
     IFS0bits.SPI1IF = 0;
@@ -222,40 +237,56 @@ char getData(){
 }
 
 unsigned char spixchg(unsigned char data){
-    SPI1STATbits.SPIEN = 1;
     LATBbits.LATB5 = 0; //Set CS LOW.
     SPI1BUF = data;
     while(!SPI1STATbits.SPIRBF);
     LATBbits.LATB5 = 1; //Set CS HIGH.
-    SPI1STATbits.SPIEN = 0;
     return SPI1BUF; //dummy read to clear SPI1BUF. Also return received data.
 }
+
+void getData_I2C(unsigned char addr){
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.SEN = 1; //initiate start condition.
+    while(I2C1CONbits.SEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = addr;
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.PEN = 1;
+    while(I2C1CONbits.PEN);
+    while(!IFS1bits.MI2C1IF);
+}
+
 
 void displayData(){
     LATAbits.LATA1 = 0; //A0 = 0 for command mode.
     spixchg(0b00101001); //DISPON command.
-    delay_ms(120); 
+    delay_ms(120);  //120ms delay after using DISPON command.
     spixchg(0b00101100); //RAMWR command.
     LATAbits.LATA1 = 1; //A0 = 1 for data mode, now writing to memory.
     
     int i;
-    for(i = 0; i <20; i++) //12 bits per pixel -> 2 pixels should become black.
+    for(i = 0; i <1; i++) //12 bits per pixel -> 2 pixels should become black.
     {
         spixchg(0b00000000); 
     }
     LATAbits.LATA1 = 0; //A0 = 0 for command mode.6
     spixchg(0b00101001); //ending with any command (method 2, section 9.6.2).
+    delay_ms(120); //one more 120ms delay.
 }
 
 int main(void) {
     setup();
     initSPI();
     initUART();
+    initI2C();
     __delay_ms(2000);
-    /*while(1){
-        displayData();
-    }*/
     while(1){
+        getData_I2C(0b11010001);
+        __delay_ms(100);
+    }
+    /*while(1){
         sendTrig();
         while(!trigDone);
         while(!PORTBbits.RB12);
@@ -276,14 +307,14 @@ int main(void) {
         switch (data)
         {
             case 'W':{
-                LATBbits.LATB7 = 1;
-                LATBbits.LATB9 = 1;
+                LATBbits.LATB11 = 1;
+                LATBbits.LATB13 = 1;
                 break;
             }
             
             case 'S':{
-                LATBbits.LATB8 = 1;
-                LATBbits.LATB11 = 1;
+                LATBbits.LATB12 = 1;
+                LATBbits.LATB14 = 1;
                 break;
             }
             
@@ -292,6 +323,6 @@ int main(void) {
             }
         }
         delay_ms(1000);
-        LATB &= 0b1111010001111111; 
-    }
+        LATB &= 0b1000011111111111; 
+    }*/
 }

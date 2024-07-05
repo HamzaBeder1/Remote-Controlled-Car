@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <executable name="dist/default/debug/RCCar.X.debug.elf">
+  <executable name="dist/default/production/RCCar.X.production.elf">
     <memory name="data">
       <units>bytes</units>
       <length>8192</length>
-      <used>116</used>
-      <free>8076</free>
+      <used>36</used>
+      <free>8156</free>
     </memory>
     <memory name="program">
       <units>bytes</units>
