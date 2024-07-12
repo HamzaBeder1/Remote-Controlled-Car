@@ -26,6 +26,7 @@ volatile char buffer[20];
 volatile int front = 0, back = 0;
 int trigDone = 0;
 int toggleMove;
+double i2c_data;
 void setup(){
     CLKDIVbits.RCDIV = 0;
     AD1PCFG |= 0b0001111111111111;
@@ -250,9 +251,12 @@ void getData_I2C(unsigned char addr){
     while(I2C1CONbits.SEN);
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
-    I2C1TRN = addr;
+    I2C1TRN = addr; //send address and r/w bit.
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.RCEN = 1; //enable receive mode and get data from module.
+    while(I2C1CONbits.RCEN); //hardware will automatically clear this bit when done receiving.
+    i2c_data = I2C1RCV;
     I2C1CONbits.PEN = 1;
     while(I2C1CONbits.PEN);
     while(!IFS1bits.MI2C1IF);
