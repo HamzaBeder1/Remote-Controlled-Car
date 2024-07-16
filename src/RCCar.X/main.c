@@ -237,7 +237,7 @@ char getData(){
     return data;
 }
 
-unsigned char spixchg(unsigned char data){
+unsigned char sendDataSPI(unsigned char data){
     LATBbits.LATB5 = 0; //Set CS LOW.
     SPI1BUF = data;
     while(!SPI1STATbits.SPIRBF);
@@ -245,13 +245,13 @@ unsigned char spixchg(unsigned char data){
     return SPI1BUF; //dummy read to clear SPI1BUF. Also return received data.
 }
 
-void getData_I2C(unsigned char addr){
+void getData_I2C(){
     IFS1bits.MI2C1IF = 0;
     I2C1CONbits.SEN = 1; //initiate start condition.
     while(I2C1CONbits.SEN);
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
-    I2C1TRN = addr; //send address and r/w bit.
+    I2C1TRN = 0b11010001; //send address and r/w bit.
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
     I2C1CONbits.RCEN = 1; //enable receive mode and get data from module.
@@ -262,22 +262,36 @@ void getData_I2C(unsigned char addr){
     while(!IFS1bits.MI2C1IF);
 }
 
-
-void displayData(){
+void sendCommandDisplay(unsigned char data, unsigned char * params, size_t param_size){
     LATAbits.LATA1 = 0; //A0 = 0 for command mode.
-    spixchg(0b00101001); //DISPON command.
-    delay_ms(120);  //120ms delay after using DISPON command.
-    spixchg(0b00101100); //RAMWR command.
-    LATAbits.LATA1 = 1; //A0 = 1 for data mode, now writing to memory.
-    
-    int i;
-    for(i = 0; i <1; i++) //12 bits per pixel -> 2 pixels should become black.
-    {
-        spixchg(0b00000000); 
+    sendDataSPI(data); //send command.
+    LATAbits.LATA1 = 1; //A0 = 1
+    if(param_size > 0){
+        for(int i = 0; i < param_size; i++){
+            sendDataSPI(params[i-1]);
+        }  
     }
-    LATAbits.LATA1 = 0; //A0 = 0 for command mode.6
-    spixchg(0b00101001); //ending with any command (method 2, section 9.6.2).
-    delay_ms(120); //one more 120ms delay.
+}
+
+
+void initDisplay(){
+    LATAbits.LATA3 = 1; //RESET = 1, it is an active low pin.
+    unsigned char params[1] = {0x55}; //Used for COLMOD.
+    sendCommandDisplay(0x11, params, 0); //SLPOUT: This turns off sleep mode.
+    sendCommandDisplay(0x3A, params, 1); //COLMOD: This formats the pictures as 16bits/pixel.
+    sendCommandDisplay(0x21, params, 0); //INVON: Enter display inversion mode.
+    sendCommandDisplay(0x2C, params, 0); //RAMWR: Memory write command
+}
+
+void drawDisplay(unsigned char * data){
+    sendCommandDisplay(0x2C, NULL, 0); //RAMWR: Memory write command
+    int i;
+    /*for(i = 0; i < 32768; i++){ //128x128 display, 2 bytes per pixel.
+        sendDataSPI(0x55);
+    } //128x128 display, 2 bytes per pixel.*/
+    for(int i = 0; i < 1; i++){ //one iteration for simplicity when debugging.
+        sendDataSPI(0x00);
+    }
 }
 
 int main(void) {
@@ -286,9 +300,12 @@ int main(void) {
     initUART();
     initI2C();
     __delay_ms(2000);
+    initDisplay();
+    __delay_ms(1000);
     while(1){
-        getData_I2C(0b11010001);
-        __delay_ms(100);
+        //drawDisplay(NULL);
+        getData_I2C();
+        __delay_ms(1000);
     }
     /*while(1){
         sendTrig();
