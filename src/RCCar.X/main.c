@@ -245,7 +245,67 @@ unsigned char sendDataSPI(unsigned char data){
     return SPI1BUF; //dummy read to clear SPI1BUF. Also return received data.
 }
 
-void getData_I2C(){
+/*
+ void initGyro(){
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.SEN = 1; //initiate start condition.
+    while(I2C1CONbits.SEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0b11010000; //send address and do write operation.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0b01101011; //send address of register
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.RSEN = 1; //initiate repeated start condition.
+    while(I2C1CONbits.RSEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0b11010001; //send address and do read operation.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.RCEN = 1; //enable receive mode and get data from module.
+    while(I2C1CONbits.RCEN); //hardware will automatically clear this bit when done receiving.
+    i2c_data = I2C1RCV;
+    I2C1CONbits.PEN = 1;
+    while(I2C1CONbits.PEN);
+    while(!IFS1bits.MI2C1IF);
+}
+ */
+
+void initGyro(){
+IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.SEN = 1; //initiate start condition.
+    while(I2C1CONbits.SEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0b11010000; //send slave address and do write operation.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0b01101011; //send address of register
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.RSEN = 1; //initiate repeated start condition.
+    while(I2C1CONbits.RSEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0b11010000; //send slave address and do write operation.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0x00; //write this to PWR_MGMT_1 register.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.PEN = 1;
+    while(I2C1CONbits.PEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+}
+
+
+
+
+void getDataI2C(){
     IFS1bits.MI2C1IF = 0;
     I2C1CONbits.SEN = 1; //initiate start condition.
     while(I2C1CONbits.SEN);
@@ -304,7 +364,7 @@ int main(void) {
     __delay_ms(1000);
     while(1){
         //drawDisplay(NULL);
-        getData_I2C();
+        getDataI2C();
         __delay_ms(1000);
     }
     /*while(1){
