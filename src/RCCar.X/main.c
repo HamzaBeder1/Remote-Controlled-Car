@@ -17,6 +17,16 @@
 #include <stdbool.h>
 #include <string.h>
 
+#define COLMOD 0x3A
+#define FRMCTR1 0xB1
+#define FRMCTR2 0xB2
+#define FRMCTR3 0xB3
+#define VMCTR1 0xC5
+#define INVON 0x21
+#define SLPOUT 0x11
+#define NORON 0x13
+#define DISPON 0x29
+#define RAMWR 0x2C
 
 bool stopMotion = 0;
 volatile uint32_t finalTime = 0;
@@ -27,6 +37,26 @@ volatile int front = 0, back = 0;
 int trigDone = 0;
 int toggleMove;
 double i2c_data;
+
+void initDisplay(){
+    LATAbits.LATA3 = 1; //RESET = 1, it is an active low pin.
+    unsigned char params[1] = {0x55}; //Used for COLMOD.
+    unsigned char params2[3] = {0x02, 0x2C, 0x2D};
+    unsigned char params3[3] = {0x02, 0x2C, 0x2D};
+    unsigned char params4[6] = {0x02, 0x2C, 0x2D, 0x02, 0x2C, 0x2D};
+    unsigned char params5[2] = {0x51,0x4D};
+    sendCommandDisplay(COLMOD, params, 1); //COLMOD: This formats the pictures as 16bits/pixel.
+    sendCommandDisplay(FRMCTR1, params2, 3);
+    sendCommandDisplay(FRMCTR2, params3, 3);
+    sendCommandDisplay(FRMCTR3, params4, 6);
+    sendCommandDisplay(VMCTR1, params5, 2);
+    sendCommandDisplay(INVON, params, 0);//INVON: Enter display inversion mode.
+    sendCommandDisplay(SLPOUT, params, 0); //SLPOUT: This turns off sleep mode.
+    sendCommandDisplay(NORON, params, 0);
+    sendCommandDisplay(DISPON, params, 0);
+    sendCommandDisplay(RAMWR, params, 0); //RAMWR: Memory write command
+}
+
 void setup(){
     CLKDIVbits.RCDIV = 0;
     AD1PCFG |= 0b0001111111111111;
@@ -302,9 +332,6 @@ IFS1bits.MI2C1IF = 0;
     IFS1bits.MI2C1IF = 0;
 }
 
-
-
-
 void getDataI2C(){
     IFS1bits.MI2C1IF = 0;
     I2C1CONbits.SEN = 1; //initiate start condition.
@@ -328,30 +355,21 @@ void sendCommandDisplay(unsigned char data, unsigned char * params, size_t param
     LATAbits.LATA1 = 1; //A0 = 1
     if(param_size > 0){
         for(int i = 0; i < param_size; i++){
-            sendDataSPI(params[i-1]);
+            sendDataSPI(params[i]);
         }  
     }
 }
 
 
-void initDisplay(){
-    LATAbits.LATA3 = 1; //RESET = 1, it is an active low pin.
-    unsigned char params[1] = {0x55}; //Used for COLMOD.
-    sendCommandDisplay(0x11, params, 0); //SLPOUT: This turns off sleep mode.
-    sendCommandDisplay(0x3A, params, 1); //COLMOD: This formats the pictures as 16bits/pixel.
-    sendCommandDisplay(0x21, params, 0); //INVON: Enter display inversion mode.
-    sendCommandDisplay(0x2C, params, 0); //RAMWR: Memory write command
-}
-
 void drawDisplay(unsigned char * data){
     sendCommandDisplay(0x2C, NULL, 0); //RAMWR: Memory write command
     int i;
-    /*for(i = 0; i < 32768; i++){ //128x128 display, 2 bytes per pixel.
-        sendDataSPI(0x55);
-    } //128x128 display, 2 bytes per pixel.*/
-    for(int i = 0; i < 1; i++){ //one iteration for simplicity when debugging.
+    for(i = 0; i < 32768; i++){ //128x128 display, 2 bytes per pixel.
+        sendDataSPI(0xAA);
+    } //128x128 display, 2 bytes per pixel.
+    /*for(int i = 0; i < 1; i++){ //one iteration for simplicity when debugging.
         sendDataSPI(0x00);
-    }
+    }*/
 }
 
 int main(void) {
@@ -364,7 +382,7 @@ int main(void) {
     __delay_ms(1000);
     while(1){
         //drawDisplay(NULL);
-        getDataI2C();
+        drawDisplay(NULL);
         __delay_ms(1000);
     }
     /*while(1){
