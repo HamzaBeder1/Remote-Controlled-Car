@@ -56,6 +56,78 @@ enum accelRange{
     RANGE_16G = 0b11
 };
 
+struct PIC24RTC{
+    int16_t year;
+    int8_t month;
+    int8_t day;
+    int8_t wday;
+    int8_t hour;
+    int8_t minute;
+    int8_t second;
+};
+
+struct PIC24RTC rtcc;
+
+void setRTCWREN(){
+
+    asm volatile ("push w7");
+    asm volatile("push w8");
+    asm volatile("disi #5");
+    asm volatile("mov #0x55, w7");
+    asm volatile("mov w7, _NVMKEY");
+    asm volatile("mov #0xAA, w8");
+    asm volatile("mov w8, _NVMKEY");
+    asm volatile("bset _RCFGCAL, #13");
+    asm volatile("pop w8");
+    asm volatile("pop w7");
+    
+}
+
+uint8_t bcd2dec(uint8_t bcd){
+  return bcd/16*10 + bcd%16;
+}
+
+uint8_t dec2bcd(uint8_t dec){
+    uint8_t temp = dec/10*16 + dec%10;
+    
+  return temp;
+}
+
+void initRTCC(int16_t year, int8_t month, int8_t day, int8_t wday, int8_t hour, int8_t minute, int8_t second){
+    //RCFGCALbits.RTCWREN = 1;//RTCVALH and RTCVALL registers can be written to.  
+    setRTCWREN();
+    RCFGCALbits.RTCEN = 1; //enable RTCC module.
+    RCFGCALbits.RTCPTR = 0b11; //Pointer to RTCC Value registers. 
+    
+    int8_t temp = (year%10) + ((year/10)%10)*10;
+    RTCVAL = dec2bcd(temp);
+    RTCVAL = (dec2bcd(month) << 8) | dec2bcd(day);
+    RTCVAL = (dec2bcd(wday) << 8) | dec2bcd(hour);
+    RTCVAL = (dec2bcd(minute) <<8 | dec2bcd(second));
+    RCFGCALbits.RTCWREN = 0;
+    int x = 21;
+    x+=21111;
+}
+
+void getDateTime(){
+    RCFGCALbits.RTCPTR = 0b11; //Pointer to RTCC Value registers. 
+    
+    int16_t year = RTCVAL;
+    int16_t monthAndDay = RTCVAL;
+    int16_t wDayAndHour = RTCVAL;
+    int16_t minuteAndSecond = RTCVAL;
+    
+    rtcc.year = bcd2dec(year);
+    rtcc.month = bcd2dec(monthAndDay >> 8);
+    rtcc.day = bcd2dec(monthAndDay & 0x00FF);
+    rtcc.wday = bcd2dec(wDayAndHour >> 8);
+    rtcc.hour = bcd2dec(wDayAndHour & 0x00FF);
+    rtcc.minute = bcd2dec(minuteAndSecond >> 8);
+    rtcc.second = bcd2dec(minuteAndSecond & 0x00FF);
+    int x = 21;
+    x+=21111;
+}
+
 void setup(){
     CLKDIVbits.RCDIV = 0;
     AD1PCFG |= 0b0001111111111111;
@@ -485,10 +557,10 @@ int main(void) {
     initUART();
     initI2C();
     initMPU6050(RANGE_2G);
-    readRegisterMPU6050(ACCEL_CONFIG);
+    initRTCC(2024, 8, 3, 7, 12, 10, 30);
     __delay_ms(1000);
     while(1){
-        getAccelMPU6050();
+        getDateTime();
         //drawDisplay(NULL);
        //char * x = readRegisterI2C(MPU6050_ADDR, PWR_MGMT_1);
         //readRegisterMPU6050(PWR_MGMT_1);
