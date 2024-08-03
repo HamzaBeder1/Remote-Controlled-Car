@@ -17,6 +17,7 @@
 #include <stdbool.h>
 #include <string.h>
 
+#define MPU6050_ADDR 0x68
 #define COLMOD 0x3A
 #define FRMCTR1 0xB1
 #define FRMCTR2 0xB2
@@ -27,6 +28,16 @@
 #define NORON 0x13
 #define DISPON 0x29
 #define RAMWR 0x2C
+#define ACCEL_XOUT_H 0x3B
+#define ACCEL_XOUT_L 0x3C
+#define ACCEL_YOUT_H 0x3D
+#define ACCEL_YOUT_L 0x3E
+#define ACCEL_ZOUT_H 0x3F
+#define ACCEL_ZOUT_L 0x40
+#define WHO_AM_I 0x75
+#define PWR_MGMT_1 0x6B
+#define PWR_MGMT_2 0x6C
+#define ACCEL_CONFIG  0x1C
 
 bool stopMotion = 0;
 volatile uint32_t finalTime = 0;
@@ -36,26 +47,14 @@ volatile char buffer[20];
 volatile int front = 0, back = 0;
 int trigDone = 0;
 int toggleMove;
-double i2c_data;
+float step;
 
-void initDisplay(){
-    LATAbits.LATA3 = 1; //RESET = 1, it is an active low pin.
-    unsigned char params[1] = {0x55}; //Used for COLMOD.
-    unsigned char params2[3] = {0x02, 0x2C, 0x2D};
-    unsigned char params3[3] = {0x02, 0x2C, 0x2D};
-    unsigned char params4[6] = {0x02, 0x2C, 0x2D, 0x02, 0x2C, 0x2D};
-    unsigned char params5[2] = {0x51,0x4D};
-    sendCommandDisplay(COLMOD, params, 1); //COLMOD: This formats the pictures as 16bits/pixel.
-    sendCommandDisplay(FRMCTR1, params2, 3);
-    sendCommandDisplay(FRMCTR2, params3, 3);
-    sendCommandDisplay(FRMCTR3, params4, 6);
-    sendCommandDisplay(VMCTR1, params5, 2);
-    sendCommandDisplay(INVON, params, 0);//INVON: Enter display inversion mode.
-    sendCommandDisplay(SLPOUT, params, 0); //SLPOUT: This turns off sleep mode.
-    sendCommandDisplay(NORON, params, 0);
-    sendCommandDisplay(DISPON, params, 0);
-    sendCommandDisplay(RAMWR, params, 0); //RAMWR: Memory write command
-}
+enum accelRange{
+    RANGE_2G = 0b00,
+    RANGE_4G = 0b01,
+    RANGE_8G = 0b10,
+    RANGE_16G = 0b11
+};
 
 void setup(){
     CLKDIVbits.RCDIV = 0;
@@ -178,6 +177,155 @@ void initUART(){
     IPC2bits.U1RXIP = 5; //priority of 5
 }
 
+/*
+void initGyro(){
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.SEN = 1; //initiate start condition.
+    while(I2C1CONbits.SEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0b11010000; //send slave address and do write operation.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = PWR_MGMT_1; //send address of register
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.RSEN = 1; //initiate repeated start condition.
+    while(I2C1CONbits.RSEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0b11010000; //send slave address and do write operation.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1TRN = 0x40; //write this to PWR_MGMT_1 register.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.PEN = 1;
+    while(I2C1CONbits.PEN);
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+}
+*/
+
+
+void sendStartBitI2C(){
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.SEN = 1; //send start bit.
+    while(I2C1CONbits.SEN); //wait for SEN to be cleared by hardware.
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+}
+
+void sendStopBitI2C(){
+    IFS1bits.MI2C1IF = 0;
+    I2C1CONbits.PEN = 1; //send stop bit.
+    while(I2C1CONbits.PEN); //hardware will automatically clear this bit when done receiving.
+}
+
+
+void sendDataI2C(unsigned char data){
+    I2C1TRN = data;
+    while(!IFS1bits.MI2C1IF);
+    IFS1bits.MI2C1IF = 0;
+}
+
+unsigned char getDataI2C(){
+    unsigned char result = I2C1RCV;
+    return result;
+}
+
+void writeRegisterI2C(unsigned char addr, unsigned char reg, unsigned char data){
+    sendDataI2C(addr << 1);
+    sendDataI2C(reg);
+    sendDataI2C(data);
+}
+
+unsigned char readRegisterI2C(unsigned char addr, unsigned char reg){
+    sendDataI2C(addr << 1);
+    sendDataI2C(reg);
+    sendStopBitI2C();
+    sendStartBitI2C();
+    sendDataI2C((addr <<1)|1);
+    I2C1CONbits.RCEN = 1; //enable receive mode and get data from module.
+    while(I2C1CONbits.RCEN); //hardware will automatically clear this bit when done receiving.
+    unsigned char i2c_data = I2C1RCV;
+    return i2c_data;
+}
+
+void writeRegisterMPU6050(unsigned char reg, unsigned char data){
+    sendStartBitI2C();
+    writeRegisterI2C(MPU6050_ADDR, reg, data);
+    sendStopBitI2C();
+}
+
+unsigned char readRegisterMPU6050(unsigned char reg){
+    sendStartBitI2C();
+    unsigned char val = readRegisterI2C(MPU6050_ADDR, reg);
+    sendStopBitI2C();
+    return val;
+}
+
+void initMPU6050(unsigned char AFS_SEL){
+    switch(AFS_SEL){
+        case RANGE_2G:
+            step = 0.00059877;
+            break;
+        case RANGE_4G:
+            step = 0.00119;
+        case RANGE_8G:
+            step = 0.002395;
+        case RANGE_16G:
+            step = 0.00479;
+        default:
+            break;
+    }
+    writeRegisterMPU6050(PWR_MGMT_1, 0x00);
+    unsigned char temp = readRegisterMPU6050(ACCEL_CONFIG);
+    temp &= 0b11100111;
+    temp |= (AFS_SEL << 3);
+    writeRegisterMPU6050(ACCEL_CONFIG, temp);
+}
+
+void getAccelMPU6050(){
+    int16_t accelXH = readRegisterMPU6050(ACCEL_XOUT_H);
+    int16_t accelXL = readRegisterMPU6050(ACCEL_XOUT_L);
+    int16_t accelYH = readRegisterMPU6050(ACCEL_YOUT_H);
+    int16_t accelYL = readRegisterMPU6050(ACCEL_YOUT_L);
+    int16_t accelZH = readRegisterMPU6050(ACCEL_ZOUT_H);
+    int16_t accelZL = readRegisterMPU6050(ACCEL_ZOUT_L);
+    
+    int16_t accelX = (accelXH << 8) | (accelXL);
+    int16_t accelY = (accelYH << 8) | (accelYL);
+    int16_t accelZ = (accelZH << 8) | (accelZL);
+    
+    float X = (accelX)*step;
+    float Y = (accelY)*step;
+    float Z = (accelZ)*step;
+    
+    int x = 51;
+    x+=1;
+}
+
+
+void initDisplay(){
+    LATAbits.LATA3 = 1; //RESET = 1, it is an active low pin.
+    unsigned char params[1] = {0x55}; //Used for COLMOD.
+    unsigned char params2[3] = {0x02, 0x2C, 0x2D};
+    unsigned char params3[3] = {0x02, 0x2C, 0x2D};
+    unsigned char params4[6] = {0x02, 0x2C, 0x2D, 0x02, 0x2C, 0x2D};
+    unsigned char params5[2] = {0x51,0x4D};
+    sendCommandDisplay(COLMOD, params, 1); //COLMOD: This formats the pictures as 16bits/pixel.
+    sendCommandDisplay(FRMCTR1, params2, 3);
+    sendCommandDisplay(FRMCTR2, params3, 3);
+    sendCommandDisplay(FRMCTR3, params4, 6);
+    sendCommandDisplay(VMCTR1, params5, 2);
+    sendCommandDisplay(INVON, params, 0);//INVON: Enter display inversion mode.
+    sendCommandDisplay(SLPOUT, params, 0); //SLPOUT: This turns off sleep mode.
+    sendCommandDisplay(NORON, params, 0);
+    sendCommandDisplay(DISPON, params, 0);
+    sendCommandDisplay(RAMWR, params, 0); //RAMWR: Memory write command
+}
+
 void __attribute__((interrupt, no_auto_psv)) _MI2C1IFInterrupt(void){
     IFS1bits.MI2C1IF = 0;
 }
@@ -275,79 +423,38 @@ unsigned char sendDataSPI(unsigned char data){
     return SPI1BUF; //dummy read to clear SPI1BUF. Also return received data.
 }
 
+
+
 /*
- void initGyro(){
+ char * getDataI2C(unsigned char data){
     IFS1bits.MI2C1IF = 0;
     I2C1CONbits.SEN = 1; //initiate start condition.
     while(I2C1CONbits.SEN);
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010000; //send address and do write operation.
+    I2C1TRN = 0b11010000; //send address and write bit.
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b01101011; //send address of register
+    I2C1TRN = data;
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
     I2C1CONbits.RSEN = 1; //initiate repeated start condition.
     while(I2C1CONbits.RSEN);
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010001; //send address and do read operation.
+    I2C1TRN = 0b11010001; //send address and read bit.
     while(!IFS1bits.MI2C1IF);
     IFS1bits.MI2C1IF = 0;
     I2C1CONbits.RCEN = 1; //enable receive mode and get data from module.
     while(I2C1CONbits.RCEN); //hardware will automatically clear this bit when done receiving.
-    i2c_data = I2C1RCV;
+    char * i2c_data = I2C1RCV;
     I2C1CONbits.PEN = 1;
     while(I2C1CONbits.PEN);
     while(!IFS1bits.MI2C1IF);
+    return i2c_data;
 }
  */
 
-void initGyro(){
-IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.SEN = 1; //initiate start condition.
-    while(I2C1CONbits.SEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010000; //send slave address and do write operation.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b01101011; //send address of register
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.RSEN = 1; //initiate repeated start condition.
-    while(I2C1CONbits.RSEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010000; //send slave address and do write operation.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0x00; //write this to PWR_MGMT_1 register.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.PEN = 1;
-    while(I2C1CONbits.PEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-}
-
-void getDataI2C(){
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.SEN = 1; //initiate start condition.
-    while(I2C1CONbits.SEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010001; //send address and r/w bit.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.RCEN = 1; //enable receive mode and get data from module.
-    while(I2C1CONbits.RCEN); //hardware will automatically clear this bit when done receiving.
-    i2c_data = I2C1RCV;
-    I2C1CONbits.PEN = 1;
-    while(I2C1CONbits.PEN);
-    while(!IFS1bits.MI2C1IF);
-}
 
 void sendCommandDisplay(unsigned char data, unsigned char * params, size_t param_size){
     LATAbits.LATA1 = 0; //A0 = 0 for command mode.
@@ -360,12 +467,12 @@ void sendCommandDisplay(unsigned char data, unsigned char * params, size_t param
     }
 }
 
-
 void drawDisplay(unsigned char * data){
     sendCommandDisplay(0x2C, NULL, 0); //RAMWR: Memory write command
     int i;
-    for(i = 0; i < 32768; i++){ //128x128 display, 2 bytes per pixel.
-        sendDataSPI(0xAA);
+    for(i = 0; i < 342144; i++){ //128x128 display, 2 bytes per pixel.
+        sendDataSPI(0x00);
+        sendDataSPI(0x00);
     } //128x128 display, 2 bytes per pixel.
     /*for(int i = 0; i < 1; i++){ //one iteration for simplicity when debugging.
         sendDataSPI(0x00);
@@ -377,14 +484,17 @@ int main(void) {
     initSPI();
     initUART();
     initI2C();
-    __delay_ms(2000);
-    initDisplay();
+    initMPU6050(RANGE_2G);
+    readRegisterMPU6050(ACCEL_CONFIG);
     __delay_ms(1000);
     while(1){
+        getAccelMPU6050();
         //drawDisplay(NULL);
-        drawDisplay(NULL);
-        __delay_ms(1000);
+       //char * x = readRegisterI2C(MPU6050_ADDR, PWR_MGMT_1);
+        //readRegisterMPU6050(PWR_MGMT_1);
+        //__delay_ms(1000);
     }
+}
     /*while(1){
         sendTrig();
         while(!trigDone);
@@ -424,4 +534,4 @@ int main(void) {
         delay_ms(1000);
         LATB &= 0b1000011111111111; 
     }*/
-}
+
