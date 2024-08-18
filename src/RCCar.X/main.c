@@ -68,8 +68,27 @@ struct PIC24RTC{
 
 struct PIC24RTC rtcc;
 
-void setRTCWREN(){
+void setIdleMode(){
+    //Turn off interrupts. 
+    IEC0bits.T1IE = 0;
+    IEC0bits.SPI1IE = 0;
+    IEC0bits.IC1IE = 0;
+    
+    //Turn on idle mode.
+    asm volatile ("PWRSAV #0");
+    int x = 21;
+    x+=1;
+}
 
+void disableIdleMode(){
+    
+    //Turn interrupts back on.
+    IEC0bits.T1IE = 0;
+    IEC0bits.SPI1IE = 0;
+    IEC0bits.IC1IE = 0;
+}
+
+void setRTCWREN(){
     asm volatile ("push w7");
     asm volatile("push w8");
     asm volatile("disi #5");
@@ -411,6 +430,7 @@ void __attribute__((__interrupt__, __auto_psv__)) _SPI1Interrupt(void){
 void __attribute__((__interrupt__,__auto_psv__)) _U1RXInterrupt(void)
 {
     IFS0bits.U1RXIF = 0;
+    disableIdleMode();
     buffer[front] = U1RXREG;
     front = (front+1)%20;
 }
@@ -495,38 +515,11 @@ unsigned char sendDataSPI(unsigned char data){
     return SPI1BUF; //dummy read to clear SPI1BUF. Also return received data.
 }
 
-
-
-/*
- char * getDataI2C(unsigned char data){
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.SEN = 1; //initiate start condition.
-    while(I2C1CONbits.SEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010000; //send address and write bit.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = data;
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.RSEN = 1; //initiate repeated start condition.
-    while(I2C1CONbits.RSEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010001; //send address and read bit.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.RCEN = 1; //enable receive mode and get data from module.
-    while(I2C1CONbits.RCEN); //hardware will automatically clear this bit when done receiving.
-    char * i2c_data = I2C1RCV;
-    I2C1CONbits.PEN = 1;
-    while(I2C1CONbits.PEN);
-    while(!IFS1bits.MI2C1IF);
-    return i2c_data;
+unsigned char sendDataSPI2(unsigned char data){
+    SPI1BUF = data;
+    while(!SPI1STATbits.SPIRBF);
+    return SPI1BUF; //dummy read to clear SPI1BUF. Also return received data.
 }
- */
-
 
 void sendCommandDisplay(unsigned char data, unsigned char * params, size_t param_size){
     LATAbits.LATA1 = 0; //A0 = 0 for command mode.
@@ -539,16 +532,20 @@ void sendCommandDisplay(unsigned char data, unsigned char * params, size_t param
     }
 }
 
-void drawDisplay(unsigned char * data){
+void drawPixel(int16_t data){
+    sendDataSPI2(data >> 8); 
+    sendDataSPI2(data & 0x00FF);
+}
+
+
+void drawDisplay(int16_t data[2], int size){
     sendCommandDisplay(0x2C, NULL, 0); //RAMWR: Memory write command
+    LATBbits.LATB5 = 0; //Set CS LOW.
     int i;
-    for(i = 0; i < 342144; i++){ //128x128 display, 2 bytes per pixel.
-        sendDataSPI(0x00);
-        sendDataSPI(0x00);
-    } //128x128 display, 2 bytes per pixel.
-    /*for(int i = 0; i < 1; i++){ //one iteration for simplicity when debugging.
-        sendDataSPI(0x00);
-    }*/
+    for(i = 0; i < 20480; i++){ 
+        drawPixel(0xF800);
+    }
+    LATBbits.LATB5 = 1; //Set CS HIGH.
 }
 
 int main(void) {
@@ -558,13 +555,11 @@ int main(void) {
     initI2C();
     initMPU6050(RANGE_2G);
     initRTCC(2024, 8, 3, 7, 12, 10, 30);
-    __delay_ms(1000);
+    initDisplay();
+    
+    
     while(1){
-        getDateTime();
-        //drawDisplay(NULL);
-       //char * x = readRegisterI2C(MPU6050_ADDR, PWR_MGMT_1);
-        //readRegisterMPU6050(PWR_MGMT_1);
-        //__delay_ms(1000);
+        setIdleMode();
     }
 }
     /*while(1){
