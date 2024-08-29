@@ -1,151 +1,15 @@
+#include "main.h"
+
 #pragma config ICS = PGx1          
 #pragma config FWDTEN = OFF        
 #pragma config GWRP = OFF          
 #pragma config GCP = OFF           
 #pragma config JTAGEN = OFF        
-
 #pragma config I2C1SEL = PRI       
 #pragma config IOL1WAY = OFF      
 #pragma config OSCIOFNC = ON       
-#pragma config FCKSM = CSECME     
-                                      
+#pragma config FCKSM = CSECME                                     
 #pragma config FNOSC = FRCPLL  
-
-#define FCY 16000000UL
-#include <libpic30.h>
-#include "xc.h"
-#include <stdbool.h>
-#include <string.h>
-
-#define MPU6050_ADDR 0x68
-#define COLMOD 0x3A
-#define FRMCTR1 0xB1
-#define FRMCTR2 0xB2
-#define FRMCTR3 0xB3
-#define VMCTR1 0xC5
-#define INVON 0x21
-#define SLPOUT 0x11
-#define NORON 0x13
-#define DISPON 0x29
-#define RAMWR 0x2C
-#define ACCEL_XOUT_H 0x3B
-#define ACCEL_XOUT_L 0x3C
-#define ACCEL_YOUT_H 0x3D
-#define ACCEL_YOUT_L 0x3E
-#define ACCEL_ZOUT_H 0x3F
-#define ACCEL_ZOUT_L 0x40
-#define WHO_AM_I 0x75
-#define PWR_MGMT_1 0x6B
-#define PWR_MGMT_2 0x6C
-#define ACCEL_CONFIG  0x1C
-
-bool stopMotion = 0;
-volatile uint32_t finalTime = 0;
-volatile int overflowtmr = 0;
-const float distanceThreshold = 2;
-volatile char buffer[20];
-volatile int front = 0, back = 0;
-int trigDone = 0;
-int toggleMove;
-float step;
-
-enum accelRange{
-    RANGE_2G = 0b00,
-    RANGE_4G = 0b01,
-    RANGE_8G = 0b10,
-    RANGE_16G = 0b11
-};
-
-struct PIC24RTC{
-    int16_t year;
-    int8_t month;
-    int8_t day;
-    int8_t wday;
-    int8_t hour;
-    int8_t minute;
-    int8_t second;
-};
-
-struct PIC24RTC rtcc;
-
-void setIdleMode(){
-    //Turn off interrupts. 
-    IEC0bits.T1IE = 0;
-    IEC0bits.SPI1IE = 0;
-    IEC0bits.IC1IE = 0;
-    
-    //Turn on idle mode.
-    asm volatile ("PWRSAV #0");
-    int x = 21;
-    x+=1;
-}
-
-void disableIdleMode(){
-    
-    //Turn interrupts back on.
-    IEC0bits.T1IE = 0;
-    IEC0bits.SPI1IE = 0;
-    IEC0bits.IC1IE = 0;
-}
-
-void setRTCWREN(){
-    asm volatile ("push w7");
-    asm volatile("push w8");
-    asm volatile("disi #5");
-    asm volatile("mov #0x55, w7");
-    asm volatile("mov w7, _NVMKEY");
-    asm volatile("mov #0xAA, w8");
-    asm volatile("mov w8, _NVMKEY");
-    asm volatile("bset _RCFGCAL, #13");
-    asm volatile("pop w8");
-    asm volatile("pop w7");
-    
-}
-
-uint8_t bcd2dec(uint8_t bcd){
-  return bcd/16*10 + bcd%16;
-}
-
-uint8_t dec2bcd(uint8_t dec){
-    uint8_t temp = dec/10*16 + dec%10;
-    
-  return temp;
-}
-
-void initRTCC(int16_t year, int8_t month, int8_t day, int8_t wday, int8_t hour, int8_t minute, int8_t second){
-    //RCFGCALbits.RTCWREN = 1;//RTCVALH and RTCVALL registers can be written to.  
-    setRTCWREN();
-    RCFGCALbits.RTCEN = 1; //enable RTCC module.
-    RCFGCALbits.RTCPTR = 0b11; //Pointer to RTCC Value registers. 
-    
-    int8_t temp = (year%10) + ((year/10)%10)*10;
-    RTCVAL = dec2bcd(temp);
-    RTCVAL = (dec2bcd(month) << 8) | dec2bcd(day);
-    RTCVAL = (dec2bcd(wday) << 8) | dec2bcd(hour);
-    RTCVAL = (dec2bcd(minute) <<8 | dec2bcd(second));
-    RCFGCALbits.RTCWREN = 0;
-    int x = 21;
-    x+=21111;
-}
-
-void getDateTime(){
-    RCFGCALbits.RTCPTR = 0b11; //Pointer to RTCC Value registers. 
-    
-    int16_t year = RTCVAL;
-    int16_t monthAndDay = RTCVAL;
-    int16_t wDayAndHour = RTCVAL;
-    int16_t minuteAndSecond = RTCVAL;
-    
-    rtcc.year = bcd2dec(year);
-    rtcc.month = bcd2dec(monthAndDay >> 8);
-    rtcc.day = bcd2dec(monthAndDay & 0x00FF);
-    rtcc.wday = bcd2dec(wDayAndHour >> 8);
-    rtcc.hour = bcd2dec(wDayAndHour & 0x00FF);
-    rtcc.minute = bcd2dec(minuteAndSecond >> 8);
-    rtcc.second = bcd2dec(minuteAndSecond & 0x00FF);
-    int x = 21;
-    x+=21111;
-}
 
 void setup(){
     CLKDIVbits.RCDIV = 0;
@@ -182,6 +46,44 @@ void setup(){
     /*IFS0bits.T3IF = 0;
     IEC0bits.T3IE = 1;
     IPC2bits.T3IP = 3;*/
+}
+
+void setRTCWREN(){
+    asm volatile ("push w7");
+    asm volatile("push w8");
+    asm volatile("disi #5");
+    asm volatile("mov #0x55, w7");
+    asm volatile("mov w7, _NVMKEY");
+    asm volatile("mov #0xAA, w8");
+    asm volatile("mov w8, _NVMKEY");
+    asm volatile("bset _RCFGCAL, #13");
+    asm volatile("pop w8");
+    asm volatile("pop w7");
+}
+
+uint8_t bcd2dec(uint8_t bcd){
+  return bcd/16*10 + bcd%16;
+}
+
+uint8_t dec2bcd(uint8_t dec){
+    uint8_t temp = dec/10*16 + dec%10;
+    return temp;
+}
+
+void initRTCC(int16_t year, int8_t month, int8_t day, int8_t wday, int8_t hour, int8_t minute, int8_t second){
+    //RCFGCALbits.RTCWREN = 1;//RTCVALH and RTCVALL registers can be written to.  
+    setRTCWREN();
+    RCFGCALbits.RTCEN = 1; //enable RTCC module.
+    RCFGCALbits.RTCPTR = 0b11; //Pointer to RTCC Value registers. 
+    
+    int8_t temp = (year%10) + ((year/10)%10)*10;
+    RTCVAL = dec2bcd(temp);
+    RTCVAL = (dec2bcd(month) << 8) | dec2bcd(day);
+    RTCVAL = (dec2bcd(wday) << 8) | dec2bcd(hour);
+    RTCVAL = (dec2bcd(minute) <<8 | dec2bcd(second));
+    RCFGCALbits.RTCWREN = 0;
+    int x = 21;
+    x+=21111;
 }
 
 void initIC(){
@@ -268,36 +170,85 @@ void initUART(){
     IPC2bits.U1RXIP = 5; //priority of 5
 }
 
-/*
-void initGyro(){
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.SEN = 1; //initiate start condition.
-    while(I2C1CONbits.SEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010000; //send slave address and do write operation.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = PWR_MGMT_1; //send address of register
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.RSEN = 1; //initiate repeated start condition.
-    while(I2C1CONbits.RSEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0b11010000; //send slave address and do write operation.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1TRN = 0x40; //write this to PWR_MGMT_1 register.
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
-    I2C1CONbits.PEN = 1;
-    while(I2C1CONbits.PEN);
-    while(!IFS1bits.MI2C1IF);
-    IFS1bits.MI2C1IF = 0;
+void initMPU6050(unsigned char AFS_SEL){
+    switch(AFS_SEL){
+        case RANGE_2G:
+            step = 0.00059877;
+            break;
+        case RANGE_4G:
+            step = 0.00119;
+        case RANGE_8G:
+            step = 0.002395;
+        case RANGE_16G:
+            step = 0.00479;
+        default:
+            break;
+    }
+    writeRegisterMPU6050(PWR_MGMT_1, 0x00);
+    unsigned char temp = readRegisterMPU6050(ACCEL_CONFIG);
+    temp &= 0b11100111;
+    temp |= (AFS_SEL << 3);
+    writeRegisterMPU6050(ACCEL_CONFIG, temp);
 }
-*/
 
+void initDisplay(){
+    LATAbits.LATA3 = 1; //RESET = 1, it is an active low pin.
+    unsigned char params[1] = {0x55}; //Used for COLMOD.
+    unsigned char params2[3] = {0x02, 0x2C, 0x2D};
+    unsigned char params3[3] = {0x02, 0x2C, 0x2D};
+    unsigned char params4[6] = {0x02, 0x2C, 0x2D, 0x02, 0x2C, 0x2D};
+    unsigned char params5[2] = {0x51,0x4D};
+    sendCommandDisplay(COLMOD, params, 1); //COLMOD: This formats the pictures as 16bits/pixel.
+    sendCommandDisplay(FRMCTR1, params2, 3);
+    sendCommandDisplay(FRMCTR2, params3, 3);
+    sendCommandDisplay(FRMCTR3, params4, 6);
+    sendCommandDisplay(VMCTR1, params5, 2);
+    sendCommandDisplay(INVON, params, 0);//INVON: Enter display inversion mode.
+    sendCommandDisplay(SLPOUT, params, 0); //SLPOUT: This turns off sleep mode.
+    sendCommandDisplay(NORON, params, 0);
+    sendCommandDisplay(DISPON, params, 0);
+    sendCommandDisplay(RAMWR, params, 0); //RAMWR: Memory write command
+}
+
+//Turns on low power mode.
+void setIdleMode(){
+    //Turn off interrupts. 
+    IEC0bits.T1IE = 0;
+    IEC0bits.SPI1IE = 0;
+    IEC0bits.IC1IE = 0;
+    
+    //Turn on idle mode.
+    asm volatile ("PWRSAV #0");
+    int x = 21;
+    x+=1;
+}
+
+//Turns off low power mode. 
+void disableIdleMode(){
+    //Turn interrupts back on.
+    IEC0bits.T1IE = 0;
+    IEC0bits.SPI1IE = 0;
+    IEC0bits.IC1IE = 0;
+}
+
+void getDateTime(){
+    RCFGCALbits.RTCPTR = 0b11; //Pointer to RTCC Value registers. 
+    
+    int16_t year = RTCVAL;
+    int16_t monthAndDay = RTCVAL;
+    int16_t wDayAndHour = RTCVAL;
+    int16_t minuteAndSecond = RTCVAL;
+    
+    rtcc.year = bcd2dec(year);
+    rtcc.month = bcd2dec(monthAndDay >> 8);
+    rtcc.day = bcd2dec(monthAndDay & 0x00FF);
+    rtcc.wday = bcd2dec(wDayAndHour >> 8);
+    rtcc.hour = bcd2dec(wDayAndHour & 0x00FF);
+    rtcc.minute = bcd2dec(minuteAndSecond >> 8);
+    rtcc.second = bcd2dec(minuteAndSecond & 0x00FF);
+    int x = 21;
+    x+=21111;
+}
 
 void sendStartBitI2C(){
     IFS1bits.MI2C1IF = 0;
@@ -356,27 +307,6 @@ unsigned char readRegisterMPU6050(unsigned char reg){
     return val;
 }
 
-void initMPU6050(unsigned char AFS_SEL){
-    switch(AFS_SEL){
-        case RANGE_2G:
-            step = 0.00059877;
-            break;
-        case RANGE_4G:
-            step = 0.00119;
-        case RANGE_8G:
-            step = 0.002395;
-        case RANGE_16G:
-            step = 0.00479;
-        default:
-            break;
-    }
-    writeRegisterMPU6050(PWR_MGMT_1, 0x00);
-    unsigned char temp = readRegisterMPU6050(ACCEL_CONFIG);
-    temp &= 0b11100111;
-    temp |= (AFS_SEL << 3);
-    writeRegisterMPU6050(ACCEL_CONFIG, temp);
-}
-
 void getAccelMPU6050(){
     int16_t accelXH = readRegisterMPU6050(ACCEL_XOUT_H);
     int16_t accelXL = readRegisterMPU6050(ACCEL_XOUT_L);
@@ -392,29 +322,6 @@ void getAccelMPU6050(){
     float X = (accelX)*step;
     float Y = (accelY)*step;
     float Z = (accelZ)*step;
-    
-    int x = 51;
-    x+=1;
-}
-
-
-void initDisplay(){
-    LATAbits.LATA3 = 1; //RESET = 1, it is an active low pin.
-    unsigned char params[1] = {0x55}; //Used for COLMOD.
-    unsigned char params2[3] = {0x02, 0x2C, 0x2D};
-    unsigned char params3[3] = {0x02, 0x2C, 0x2D};
-    unsigned char params4[6] = {0x02, 0x2C, 0x2D, 0x02, 0x2C, 0x2D};
-    unsigned char params5[2] = {0x51,0x4D};
-    sendCommandDisplay(COLMOD, params, 1); //COLMOD: This formats the pictures as 16bits/pixel.
-    sendCommandDisplay(FRMCTR1, params2, 3);
-    sendCommandDisplay(FRMCTR2, params3, 3);
-    sendCommandDisplay(FRMCTR3, params4, 6);
-    sendCommandDisplay(VMCTR1, params5, 2);
-    sendCommandDisplay(INVON, params, 0);//INVON: Enter display inversion mode.
-    sendCommandDisplay(SLPOUT, params, 0); //SLPOUT: This turns off sleep mode.
-    sendCommandDisplay(NORON, params, 0);
-    sendCommandDisplay(DISPON, params, 0);
-    sendCommandDisplay(RAMWR, params, 0); //RAMWR: Memory write command
 }
 
 void __attribute__((interrupt, no_auto_psv)) _MI2C1IFInterrupt(void){
@@ -467,19 +374,12 @@ void __attribute__((interrupt, auto_psv)) _T1Interrupt(){
     trigDone = 1;
 }
 
-void delay_ms(unsigned int ms){
-    while(ms-- > 0){
-        asm("repeat #15999");
-        asm("nop");
-    }
-}
-
 void sendTrig(){
     LATAbits.LATA4 = 1;
     T1CONbits.TON = 1;
 }
 
-void sendData(char data []){
+void sendDataUART(char data []){
     int i;
     int len = sizeof(data)/sizeof(data[0]);
     for(i = 0; i<len; i++){
@@ -488,16 +388,7 @@ void sendData(char data []){
     }
 }
 
-void sendData2(float data[]){
-    int i;
-    int len = sizeof(data)/sizeof(data[0]);
-    for(int i = 0; i < 1; i++){
-        U1TXREG = data[i];
-        while(U1STAbits.UTXBF == 1);
-    }   
-}
-
-char getData(){
+char getDataUART(){
     if(front == back) //no new data
         return 'N';
     else if(toggleMove == 0) //collision about to occur, stop movement.
@@ -515,6 +406,7 @@ unsigned char sendDataSPI(unsigned char data){
     return SPI1BUF; //dummy read to clear SPI1BUF. Also return received data.
 }
 
+//Do not toggle CS. This will be used when sending multiple bytes of data.
 unsigned char sendDataSPI2(unsigned char data){
     SPI1BUF = data;
     while(!SPI1STATbits.SPIRBF);
